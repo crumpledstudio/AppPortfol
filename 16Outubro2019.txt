@@ -1,0 +1,3 @@
+Versao com package.json corrigida
+16 outubro 2019
+

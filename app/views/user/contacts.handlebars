@@ -1,0 +1,86 @@
+<div class="app-content content">
+    <div class="content-wrapper">
+        <div class="content-header row">
+            <div class="content-header-left col-md-8 col-12 mb-2 breadcrumb-new">
+                <h3 class="content-header-title mb-0 d-inline-block">Contactos</h3>
+            </div>
+        </div>
+        <div class="content-body">
+
+            <section class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-head">
+                            <div class="card-header">
+                                <h4 class="card-title">
+                                    <input class="form-control" id="contactInput" type="text" placeholder="Procurar contacto..">
+                                </h4>
+                                <a class="heading-elements-toggle"><i class="ft-ellipsis-h font-medium-3"></i></a>
+                                <div class="heading-elements">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="users-contacts" style="width:100%" class="table table-white-space table-borderless row-grouping display no-wrap icheck table-middle round">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:6%"></th>
+                                                <th style="width:50%" onclick="sortTable(1)">Nome</th>
+                                                <th style="width:6%"></th>
+                                                <th style="width:6%"></th>
+                                                <th style="width:6%"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {{#each arrayContacts}} {{#if this}}
+                                            <tr>
+                                                <td>
+                                                    <div class="media">
+                                                        <span class="avatar avatar-sm avatar-online rounded-circle">
+                                                                <img src="../../../app-assets/images/portrait/small/avatar-s-1.png" alt="avatar"><i></i>
+                                                            </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="media">
+                                                        <div class="media-body media-middle">
+                                                            <a href="/user/profile/{{this.accountNumber}}" class="media-heading">{{this.username}}</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-right">
+                                                    <form class="form-horizontal" method="get" action="/user/removerContact/{{this.accountNumber}}" novalidate>
+                                                        <button type="submit" class="btn box-shadow-1">
+                                                           <i class="fa fa-remove" style="color:red"></i>
+                                                        </button>
+                                                    </form>
+                                                </td>
+                                                <td class="text-center">
+                                                    <a href="mailto:email@example.com">
+                                                            <button type="button" class="btn btn-info btn-block" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+                                                                <i class="fa fa-comment" aria-hidden="true"></i> Chat
+                                                            </button>
+                                                        </a>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-success btn-block box-shadow-1">
+                                                            <i class="fa fa-envelope-open"></i> Enviar Mensagem
+                                                        </button>
+                                                </td>
+                                            </tr>
+                                            {{/if}} {{/each}}
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

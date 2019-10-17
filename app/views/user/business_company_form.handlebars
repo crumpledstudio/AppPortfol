@@ -1,0 +1,313 @@
+<div class="app-content content">
+    <div class="content-wrapper">
+        <div class="content-header row">
+        </div>
+        <div class="content-body">
+            <section class="flexbox-container">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="col-md-7 col-10 box-shadow-2 p-0">
+                        <div class="card border-grey border-lighten-3 m-0">
+                            <div class="card-header border-0 pb-0">
+                                <div class="card-title text-center">
+                                    <img src="../img/logos/blue_logo_medium.png"  class="logo-blue-md" alt="branding logo"> 
+                                </div>
+                                <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2">
+                                    <span>BUSINESS</span>
+                                </h6>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <form class="form-horizontal" method="post" action="/user/business_company" novalidate>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="name" id="name" class="form-control input-lg" placeholder="Nome" value="{{user.nome}}" tabindex="1">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="username" id="username" class="form-control input-lg" placeholder="Username" value="{{user.username}}"
+                                                        tabindex="2">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="telemovel" id="telemovel" class="form-control input-lg" placeholder="Telemovel" value="{{user.phone}}"
+                                                        tabindex="3">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-phone"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-md-6">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email" value="{{user.email}}" tabindex="4"
+                                                        required data-validation-required-message="Please enter email address.">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-mail"></i>
+                                                    </div>
+                                                    <div class="help-block font-small-3"></div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-6">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <select class="form-control" name="country" id="country" tabindex="5">
+                                                        <option value="Portugal">Portugal</option>
+                                                        <option value="Espanha">Espanha</option>
+                                                    </select>
+                                                    <div class="form-control-position">
+                                                        <i class="ft-globe"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <fieldset class="form-group position-relative has-icon-left">
+                                            <input type="text" name="nome_empresa" id="nome_empresa" class="form-control input-lg" placeholder="Nome da empresa" value="{{user.nomeEmpresa}}"
+                                                tabindex="6" required data-validation-required-message="Please enter email address.">
+                                            <div class="form-control-position">
+                                                <i class="ft-mail"></i>
+                                            </div>
+                                            <div class="help-block font-small-3"></div>
+                                        </fieldset>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="nif" id="nif" class="form-control input-lg" placeholder="NIF" value="{{user.nif}}" tabindex="7">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-phone"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="cae" id="cae" class="form-control input-lg" placeholder="CAE" value="{{user.cae}}" tabindex="8">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-globe"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="capital_social" id="capital_social" class="form-control input-lg" placeholder="Capital Social" value="{{user.capitalSocial}}"
+                                                        tabindex="9">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-phone"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="date" id="date" class="form-control pickadate picker__input picker__input--active" placeholder="data" tabindex="10">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-globe"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <select class="form-control" name="setor_atividade" id="setor_atividade" tabindex="11">
+                                                        <option value="Portugal">Setor de Atividade</option>
+                                                        <option value="bar_cafe">Bares e Cafés</option>
+                                                        <option value="clinicas">Clínicas</option>
+                                                        <option value="const_civ">Construção Civil</option>
+                                                        <option value="fabricas">Fábricas</option>
+                                                        <option value="lojas">Lojas</option>
+                                                        <option value="pastelarias">Pastelarias</option>
+                                                        <option value="restaurantes">Restaurantes</option>
+                                                        <option value="supermercados">Supermercados</option>
+                                                        <option value="servicos">Serviços</option>
+                                                        <option value="outros">Outros Negócios</option>
+                                                    </select>
+                                                    <div class="form-control-position">
+                                                        <i class="ft-phone"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <select class="form-control" name="tipo_sociedade" id="tipo_sociedade" tabindex="12">
+                                                        <option value="Portugal">Tipo Sociedade</option>
+                                                        <option value="emp_indiv">Emp. em Nome Individual</option>
+                                                        <option value="eirl">E.I.R.L</option>
+                                                        <option value="soc_uni_quotas">Soc. Unipessoal por Quotas</option>
+                                                        <option value="soc_colectivo">Soc. em Nome Colectivo</option>
+                                                        <option value="soc_por_quotas">Sociedade por Quotas</option>
+                                                        <option value="soc_anonima">Sociedade Anónima</option>
+                                                    </select>
+                                                    <div class="form-control-position">
+                                                        <i class="ft-globe"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-5 col-md-5">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="morada" id="morada" class="form-control input-lg" placeholder="Morada" value="{{user.morada}}" tabindex="13"
+                                                        required data-validation-required-message="Please enter email address.">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-mail"></i>
+                                                    </div>
+                                                    <div class="help-block font-small-3"></div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-3 col-md-3">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="codigo_postal" id="codigo_postal" class="form-control input-lg" placeholder="Codigo Postal" value="{{user.cp1}} - {{user.cp2}}"
+                                                        tabindex="14">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <select class="form-control" name="regiao" id="regiao" tabindex="15">
+                                                        <option value="{{ user.location}}" selected="selected">{{ user.location}}</option>
+                                                        <option value="Aveiro">Aveiro</option>
+                                                        <option value="Beja">Beja</option>
+                                                        <option value="Braga">Braga</option>
+                                                        <option value="Bragança">Bragança</option>
+                                                        <option value="Castelo Branco">Castelo Branco</option>
+                                                        <option value="Coimbra">Coimbra</option>
+                                                        <option value="Evora">Evora</option>
+                                                        <option value="Faro">Faro</option>
+                                                        <option value="Guarda">Guarda</option>
+                                                        <option value="Leiria">Leiria</option>
+                                                        <option value="Lisboa">Lisboa</option>
+                                                        <option value="Portalegre">Portalegre</option>
+                                                        <option value="Porto">Porto</option>
+                                                        <option value="Santarem">Santarem</option>
+                                                        <option value="Setubal">Setubal</option>
+                                                        <option value="Viana do Castelo">Viana do Castelo</option>
+                                                        <option value="Vila Real">Vila Real</option>
+                                                        <option value="Viseu">Viseu</option>
+                                                    </select>
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="social_url" id="social_url" class="form-control input-lg" placeholder="Social URL" tabindex="16">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="website" id="website" class="form-control input-lg" placeholder="Website" value="{{user.website}}"
+                                                        tabindex="17">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="tipo_atividade" id="tipo_atividade" class="form-control input-lg" placeholder="Tipo de Atividade"
+                                                        tabindex="18">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="definicao_juridica" id="definicao_juridica" class="form-control input-lg" placeholder="Definicao Juridica"
+                                                        tabindex="19">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="situacao_tributaria" id="situacao_tributaria" class="form-control input-lg" placeholder="Situação tributaria"
+                                                        tabindex="20">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="estado" id="estado" class="form-control input-lg" placeholder="Estado" tabindex="21">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-md-6">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="acoes_tribunal" id="acoes_tribunal" class="form-control input-lg" placeholder="Ações Tribunal" tabindex="22">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-6">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="processos" id="processos" class="form-control input-lg" placeholder="Processos" tabindex="23">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-md-6">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="logo_url" id="logo_url" class="form-control input-lg" placeholder="Logo URL" tabindex="22">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-6">
+                                                <fieldset class="form-group position-relative has-icon-left">
+                                                    <input type="text" name="foto_url" id="foto_url" class="form-control input-lg" placeholder="Foto URL" tabindex="23">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-md-6">
+                                                <button type="submit" class="btn btn-info btn-lg btn-block">
+                                                    <i class="ft-user"></i> Continuar</button>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-6">
+                                                <a href="login" class="btn btn-danger btn-lg btn-block">
+                                                    <i class="ft-unlock"></i> Sair</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>

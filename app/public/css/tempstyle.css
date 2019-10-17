@@ -1,0 +1,139 @@
+.fixed_height_320 {
+	height: 320px;
+}
+
+.x_panel, .x_title {
+    margin-bottom: 10px;
+}
+
+.x_panel {
+    width: 100%;
+    padding: 10px 17px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #E6E9ED;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    opacity: 1;
+    transition: all .2s ease;
+}
+
+.x_content {
+    padding: 0 5px 6px;
+    float: left;
+    clear: both;
+    margin-top: 5px;
+}
+
+.quick-btn {
+    background: #eee;
+    -webkit-box-shadow: 0 0 0 1px #F8F8F8 inset, 0 0 0 1px #CCCCCC;
+    box-shadow: 0 0 0 1px #F8F8F8 inset, 0 0 0 1px #CCCCCC;
+    color: #444;
+    display: inline-block;
+
+    margin: 10px;
+    padding-top: 16px;
+    text-align: center;
+    text-decoration: none;
+    height: 80%;
+    width: 90%;
+    position: relative;
+}
+.quick-btn span {
+    display: block;
+}
+
+
+/*
+	// 2ª linha CSS
+*/
+.mb {
+    margin-bottom: 25px;
+}
+.product-panel-2 {
+    background: #dadad2;
+    text-align: center;
+}
+.mt {
+    margin-top: 25px;
+}
+
+.pn {
+    height: 250px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Product Panel */
+.product-panel-2 .badge {
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+
+.badge-hot {
+    background: #ed5565;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    border-radius: 100%;
+}
+.btn-theme04 {
+    color: #fff;
+    background-color: #ed5565;
+    border-color: #da4453;
+}
+/* Spotify */
+#spotify {
+    background: url(https://www.blacktie.co/demo/dashgum/assets/img/lorde.jpg) no-repeat center top;
+    margin-top: -15px;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 220px;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#spotify .btn-clear-g {
+    top: 15%;
+    right: 10px;
+    position: absolute;
+    margin-top: 5px;
+}
+.btn-clear-g {
+    color: #48bcb4;
+    background: transparent;
+    border-color: #48bcb4;
+}
+.btn-clear-g:hover {
+    color: white;
+}
+#spotify .sp-title {
+    bottom: 15%;
+    left: 25px;
+    position: absolute;
+    color: #efefef;
+}
+#spotify .sp-title h3 {
+    font-weight: 900;
+}
+#spotify .play {
+    bottom: 18%;
+    right: 25px;
+    position: absolute;
+    color: #efefef;
+    font-size: 20px;
+}
+.followers {
+    margin-left: 5px;
+    margin-top: 5px;
+}

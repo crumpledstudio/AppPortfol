@@ -1,0 +1,1192 @@
+<div class="app-content content">
+    <div class="content-wrapper">
+        <div class="content-header row">
+            <div class="content-header-left col-md-8 col-12 mb-2 breadcrumb-new">
+                <h3 class="content-header-title mb-0 d-inline-block">Mercado</h3>
+            </div>
+        </div>
+        <!-- End Secção com barra de Pesquisa -->
+        <div class="content-body">
+            <!-- Search form-->
+            <section id="search-website" class="card overflow-hidden">
+                <div class="card-header">
+                    <div id="exTab1">
+                        <div class="tab-content clearfix">
+                            <div class="tab-pane active" id="QBuy">
+                                <!-- Quero Investidor -->
+                                <form class="form-group">
+                                    <div class="row qBuy">
+                                        <div class="col-lg-2">
+                                            <div class="text-center">
+                                                <form name="offerClassName" id="offerClassName">
+                                                    <select id="offerClassName" name="offerClassName" class="input form-control search-Box">  <!-- 1º Tipo de Negocio  (* Alterar Campos)-->
+                                  <option value="" disabled selected>Tipo de Negócio</option>
+                                  <option id="trespasse" value="trespasse">Trespasse</option>
+                                  <option id="quotas" value="quotas">Quotas</option>
+                                  <option id="aumento_cap" value="aumento_cap">Aumento de Capital</option>
+                                  <option id="cessao" value="cessao">Cessão de Exploração</option>
+                                  <option id="fusao" value="fusao">Fusão</option>
+                                  <option id="accoes" value="accoes">Acções</option>
+                                  <option id="consorcio" value="consorcio">Consórcio</option>
+                                  <option id="credito" value="credito">Crédito</option>
+                                  <option id="todos" value="todos">Todos Tipos de Negócio</option>
+                                </select>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-2">
+                                            <div class="text-center">
+                                                <form name="offerClassName" id="offerClassName">
+                                                    <select id="tipoSociedade" name="tipoSociedade" class="form-control search-Box"> <!-- 2º Tipo de Sociedade -->
+                                  <option id="" value="" disabled selected>Tipo de Sociedade</option>
+                                  <option id="emp_indiv" value="emp_indiv">Emp. em Nome Individual</option>
+                                  <option id="eirl" value="eirl">E.I.R.L</option>
+                                  <option id="soc_uni_quotas" value="soc_uni_quotas">Soc. Unipessoal por Quotas</option>
+                                  <option id="soc_colectivo" value="soc_colectivo">Soc. em Nome Colectivo</option>
+                                  <option id="soc_por_quotas" value="soc_por_quotas"><a>Sociedade por Quotas</a></option>
+                                  <option id="soc_anonima" value="soc_anonima">Sociedade Anónima</option>
+                        		  <option id="todos" value="todos">Todos Tipos de Sociedade</option>
+                                </select>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="text-center">
+                                                <form name="offerClassName" id="offerClassName">
+                                                    <select id="setorAtividade" name="setorAtividade" class="form-control search-Box"> <!-- 3º Sector de Actividade -->
+                                  <option id="" value="" disabled selected>Sector de Actividade</option>
+                                  <option id="bar_cafe" value="bar_cafe">Bares e Cafés</option>
+                                  <option id="clinicas" value="clinicas">Clínicas</option>
+                                  <option id="const_civ" value="const_civ">Construção Civil</option>
+                                  <option id="fabricas" value="fabricas">Fábricas</option>
+                                  <option id="lojas" value="lojas">Lojas</option>
+                                  <option id="pastelarias" value="pastelarias">Pastelarias</option>
+                                  <option id="restaurantes" value="restaurantes">Restaurantes</option>
+                                  <option id="supermercados" value="supermercados">Supermercados</option>
+                                  <option id="servicos" value="servicos">Serviços</option>
+                                  <option id="outros" value="outros">Outros Negócios</option>
+                        		  <option id="todos" value="todos">Todos Setores de Actividade</option>
+                                </select>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="text-center">
+                                                <form name="offerClassName" id="offerClassName">
+                                                    <select id="offerRegion" name="offerRegion" class="form-control search-Box"> <!-- 4º Região -->
+                                  <option id="" value="" disabled selected>Região</option>
+                                  <option id="porto_norte" value="porto_norte">Porto e Norte</option>
+                                  <option id="centro" value="centro">Centro de Portugal</option>
+                                  <option id="lisboa" value="lisboa">Lisboa Região</option>
+                                  <option id="alentejo" value="alentejo">Alentejo</option>
+                                  <option id="algarve" value="algarve">Algarve</option>
+                                  <option id="acores" value="acores">Açores</option>
+                                  <option id="madeira" value="madeira">Madeira</option>
+                                  <option id="pt" value="pt">Todas as Regiões</option >
+                                </select>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="text-center">
+                                                <form name="offerClassName" id="offerClassName">
+                                                    <select id="offerValue" name="offerValue" class="form-control search-Box"> <!-- 5º Valor de Negócio -->
+                        		   <option id="" value="" disabled selected>Valor de Negócio</option>
+                                   <option id="1k_20k" value="1k_20k">€1.000 - 20.000</option>
+                        		   <option id="20k_100k" value="20k_100k">€20.000 - 100.000</option>
+                        		   <option id="100k_500k" value="100k_500k">€100.000 - 500.000</option>
+                        		   <option id="500k_1M" value="500k_1M">€500.000 - 2.000.000</option>
+                        		   <option id="2M_10M" value="2M_10M">€2.000.000 - 10.000.000</option>
+                        		   <option id="plus_10M" value="plus_10M">+ €10.000.000</option>
+                        		   <option id="todos" value="todos">Todos Valores de Negócio</option>
+
+                                </select>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <div class="content-body">
+            <div class="row">
+                {{#each primeira_fila}} {{#if this}}
+                <div class="col-lg-3 col-sm-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <img class="card-img-market" src="/img/imagens/img-market-modelo3.jpg" alt="Card image cap">
+                            <div class="card-footer border-bottom-0 text-muted">
+                                <!-- <span class="float-left">2 days ago</span> -->
+                                <div class="float-left">
+                                    <span class="card-text text-center font-medium-3 text-bold-600 card-business-name">{{this.offerDescription}}
+									</span >
+								</div>
+								<span class="tags float-right">
+									<span class="badge badge-pill badge-success">{{this.offerClassName}}</span>
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="float-right">
+                                        <h5 class=""><span class="price">{{this.offerValue}}</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer border-top-blue-grey border-top-lighten-5 text-muted">
+                                <span class="float-left">2 days ago</span>
+                                <span class="float-right primary">
+								<a href="/market/{{this.offer_number}}" class="card-link">Ver Oferta <i class="ft-arrow-right"></i></a>
+							</span>
+                            </div>
+                        </div>
+                    </div>
+                    {{/if}} {{/each}}
+                </div>
+                <div class="row">
+                    {{#each segunda_fila}} {{#if this}}
+                    <div class="col-lg-3 col-sm-4">
+                        <div class="card">
+                            <div class="card-content">
+                                <img class="card-img-market" src="/img/imagens/img-market-modelo.jpg" alt="Card image cap">
+                                <div class="card-footer border-bottom-0 text-muted">
+                                    <!-- <span class="float-left">2 days ago</span> -->
+                                    <div class="float-left">
+                                        <span class="card-text text-center font-medium-3 text-bold-600 card-business-name">{{this.offerDescription}}
+									</span >
+								</div>
+								<span class="tags float-right">
+									<span class="badge badge-pill badge-success">{{this.offerClassName}}</span>
+                                        </span>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="float-right">
+                                            <h5 class=""><span class="price">{{this.offerValue}}</span></h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer border-top-blue-grey border-top-lighten-5 text-muted">
+                                    <span class="float-left">2 days ago</span>
+                                    <span class="float-right primary">
+								<a href="/market/{{this.offer_number}}" class="card-link">Ver Oferta <i class="ft-arrow-right"></i></a>
+							</span>
+                                </div>
+                            </div>
+                        </div>
+                        {{/if}} {{/each}}
+                    </div>
+                    <div class="row">
+                        {{#each terceira_fila}} {{#if this}}
+                        <div class="col-lg-3 col-sm-4">
+                            <div class="card">
+                                <div class="card-content">
+                                    <img class="card-img-market" src="/img/imagens/img-market-modelo2.jpg" alt="Card image cap">
+                                    <div class="card-footer border-bottom-0 text-muted">
+                                        <!-- <span class="float-left">2 days ago</span> -->
+                                        <div class="float-left">
+                                            <span class="card-text text-center font-medium-3 text-bold-600 card-business-name">{{this.offerDescription}}
+									</span >
+								</div>
+								<span class="tags float-right">
+									<span class="badge badge-pill badge-success">{{this.offerClassName}}</span>
+                                            </span>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="float-right">
+                                                <h5 class=""><span class="price">{{this.offerValue}}</span></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer border-top-blue-grey border-top-lighten-5 text-muted">
+                                        <span class="float-left">2 days ago</span>
+                                        <span class="float-right primary">
+								<a href="/market/{{this.offer_number}}" class="card-link">Ver Oferta <i class="ft-arrow-right"></i></a>
+							</span>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/if}} {{/each}}
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title text-center">URL Pagination Link</h4>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <div class="alert alert-warning">
+                                            <strong>Warning!</strong> Page will be reload.
+                                        </div>
+                                        <div id="url-content" class="border-blue-grey border-lighten-4 p-1 mb-1">You are on page 1</div>
+                                        <div class="text-center">
+                                            <ul class="pagination pagination-flat pagination-round url-links"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+            <script>
+                $(document).ready(function() {
+
+                    /*---------------------------------------------------------------------
+                                            LIMPAR FILTROS 
+                    *-------------------------------------------------------------------*/
+                    $('#limpar_filtros').click(function() {
+                        var url = window.location.href;
+                        var url1 = url.replace(/&negociavel=([^&]+)*/, "");
+                        var url2 = url1.replace(/&cidade=([^&]+)*/, "");
+                        var url3 = url2.replace(/&de=([^&]+)*/, "");
+                        var url4 = url3.replace(/&ate=([^&]+)*/, "");
+                        var url5 = url4.replace(/&subcategoria=([^&]+)*/, "");
+                        var url6 = url5.replace(/&cidade=([^&]+)*/, "");
+                        var url7 = url6.replace(/&rating=([^&]+)*/, "");
+                        window.location = url7;
+                    })
+
+                    /*---------------------------------------------------------------------
+                                            PARTE DA LISTAGEM 
+                    *-------------------------------------------------------------------*/
+                    $("#todos-lista").click(function() {
+                        $("#lista-full-products-grelha").hide();
+                        $("#lista-full-products-linha").show();
+                        $("#todos-lista").addClass("active");
+                        $("#todos-grelha").removeClass("active");
+                    });
+                    $("#todos-grelha").click(function() {
+                        $("#lista-full-products-grelha").show();
+                        $("#lista-full-products-linha").hide();
+                        $("#todos-grelha").addClass("active");
+                        $("#todos-lista").removeClass("active");
+                    });
+
+
+                    /*---------------------------------------------------------------------
+                                            PARTE DO offerClassName 
+                    *-------------------------------------------------------------------*/
+
+                    $('#offerClassName').on('click', function() {
+                        if ($(this).val() === "trespasse") {
+                            var url = window.location.href;
+                            if (url.includes("offerClassName")) {
+                                if (url.includes("&offerClassName")) {
+                                    var url = url.replace(/&offerClassName=([^&]+)*/, "&offerClassName=trespasse");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerClassName=([^&]+)*/, "?offerClassName=trespasse");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerClassName=trespasse";
+                                }
+                                else {
+                                    var url = url + "&offerClassName=trespasse";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "consorcio") {
+                            var url = window.location.href;
+                            if (url.includes("offerClassName")) {
+                                if (url.includes("&offerClassName")) {
+                                    var url = url.replace(/&offerClassName=([^&]+)*/, "&offerClassName=consorcio");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerClassName=([^&]+)*/, "?offerClassName=consorcio");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerClassName=consorcio";
+                                }
+                                else {
+                                    var url = url + "&offerClassName=consorcio";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "quotas") {
+                            var url = window.location.href;
+                            if (url.includes("offerClassName")) {
+                                if (url.includes("&offerClassName")) {
+                                    var url = url.replace(/&offerClassName=([^&]+)*/, "&offerClassName=quotas");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerClassName=([^&]+)*/, "?offerClassName=quotas");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerClassName=cessao";
+                                }
+                                else {
+                                    var url = url + "&offerClassName=cessao";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "aumento_cap") {
+                            var url = window.location.href;
+                            if (url.includes("offerClassName")) {
+                                if (url.includes("&offerClassName")) {
+                                    var url = url.replace(/&offerClassName=([^&]+)*/, "&offerClassName=aumento_cap");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerClassName=([^&]+)*/, "?offerClassName=aumento_cap");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerClassName=aumento_cap";
+                                }
+                                else {
+                                    var url = url + "&offerClassName=aumento_cap";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "cessao") {
+                            var url = window.location.href;
+                            if (url.includes("offerClassName")) {
+                                if (url.includes("&offerClassName")) {
+                                    var url = url.replace(/&offerClassName=([^&]+)*/, "&offerClassName=cessao");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerClassName=([^&]+)*/, "?offerClassName=cessao");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerClassName=cessao";
+                                }
+                                else {
+                                    var url = url + "&offerClassName=cessao";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "fusao") {
+                            var url = window.location.href;
+                            if (url.includes("offerClassName")) {
+                                if (url.includes("&offerClassName")) {
+                                    var url = url.replace(/&offerClassName=([^&]+)*/, "&offerClassName=fusao");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerClassName=([^&]+)*/, "?offerClassName=fusao");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerClassName=fusao";
+                                }
+                                else {
+                                    var url = url + "&offerClassName=fusao";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "accoes") {
+                            var url = window.location.href;
+                            if (url.includes("offerClassName")) {
+                                if (url.includes("&offerClassName")) {
+                                    var url = url.replace(/&offerClassName=([^&]+)*/, "&offerClassName=accoes");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerClassName=([^&]+)*/, "?offerClassName=accoes");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerClassName=accoes";
+                                }
+                                else {
+                                    var url = url + "&offerClassName=accoes";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "credito") {
+                            var url = window.location.href;
+                            if (url.includes("offerClassName")) {
+                                if (url.includes("&offerClassName")) {
+                                    var url = url.replace(/&offerClassName=([^&]+)*/, "&offerClassName=credito");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerClassName=([^&]+)*/, "?offerClassName=credito");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerClassName=credito";
+                                }
+                                else {
+                                    var url = url + "&offerClassName=credito";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "todos") {
+                            var url = window.location.href;
+                            if (url.includes("offerClassName")) {
+                                if (url.includes("&offerClassName")) {
+                                    var url = url.replace(/&offerClassName=([^&]+)*/, "");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerClassName=([^&]+)*[&]/, "?");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url
+                                }
+                                else {
+                                    var url = url;
+                                }
+                            }
+                            window.location = url;
+                        }
+
+                    });
+
+
+                    /*---------------------------------------------------------------------
+                                            PARTE DO tipoSociedade 
+                    *-------------------------------------------------------------------*/
+                    $('#tipoSociedade').on('click', function() {
+                        if ($(this).val() === "emp_indiv") {
+                            var url = window.location.href;
+                            if (url.includes("tipoSociedade")) {
+                                if (url.includes("&tipoSociedade")) {
+                                    var url = url.replace(/&tipoSociedade=([^&]+)*/, "&tipoSociedade=emp_indiv");
+                                }
+                                else {
+                                    var url = url.replace(/[?]tipoSociedade=([^&]+)*/, "?tipoSociedade=emp_indiv");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?tipoSociedade=emp_indiv";
+                                }
+                                else {
+                                    var url = url + "&tipoSociedade=emp_indiv";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "eirl") {
+                            var url = window.location.href;
+                            if (url.includes("tipoSociedade")) {
+                                if (url.includes("&tipoSociedade")) {
+                                    var url = url.replace(/&tipoSociedade=([^&]+)*/, "&tipoSociedade=eirl");
+                                }
+                                else {
+                                    var url = url.replace(/[?]tipoSociedade=([^&]+)*/, "?tipoSociedade=eirl");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?tipoSociedade=eirl";
+                                }
+                                else {
+                                    var url = url + "&tipoSociedade=eirl";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "soc_uni_quotas") {
+                            var url = window.location.href;
+                            if (url.includes("tipoSociedade")) {
+                                if (url.includes("&tipoSociedade")) {
+                                    var url = url.replace(/&tipoSociedade=([^&]+)*/, "&tipoSociedade=soc_uni_quotas");
+                                }
+                                else {
+                                    var url = url.replace(/[?]tipoSociedade=([^&]+)*/, "?tipoSociedade=soc_uni_quotas");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?tipoSociedade=soc_uni_quotas";
+                                }
+                                else {
+                                    var url = url + "&tipoSociedade=soc_uni_quotas";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "soc_colectivo") {
+                            var url = window.location.href;
+                            if (url.includes("tipoSociedade")) {
+                                if (url.includes("&tipoSociedade")) {
+                                    var url = url.replace(/&tipoSociedade=([^&]+)*/, "&tipoSociedade=soc_colectivo");
+                                }
+                                else {
+                                    var url = url.replace(/[?]tipoSociedade=([^&]+)*/, "?tipoSociedade=soc_colectivo");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?tipoSociedade=soc_colectivo";
+                                }
+                                else {
+                                    var url = url + "&tipoSociedade=soc_colectivo";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "soc_por_quotas") {
+                            var url = window.location.href;
+                            if (url.includes("tipoSociedade")) {
+                                if (url.includes("&tipoSociedade")) {
+                                    var url = url.replace(/&tipoSociedade=([^&]+)*/, "&tipoSociedade=soc_por_quotas");
+                                }
+                                else {
+                                    var url = url.replace(/[?]tipoSociedade=([^&]+)*/, "?tipoSociedade=soc_por_quotas");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?tipoSociedade=soc_por_quotas";
+                                }
+                                else {
+                                    var url = url + "&tipoSociedade=soc_por_quotas";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "soc_anonima") {
+                            var url = window.location.href;
+                            if (url.includes("tipoSociedade")) {
+                                if (url.includes("&tipoSociedade")) {
+                                    var url = url.replace(/&tipoSociedade=([^&]+)*/, "&tipoSociedade=soc_anonima");
+                                }
+                                else {
+                                    var url = url.replace(/[?]tipoSociedade=([^&]+)*/, "?tipoSociedade=soc_anonima");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?tipoSociedade=soc_anonima";
+                                }
+                                else {
+                                    var url = url + "&tipoSociedade=soc_anonima";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "todos") {
+                            var url = window.location.href;
+                            if (url.includes("tipoSociedade")) {
+                                if (url.includes("&tipoSociedade")) {
+                                    var url = url.replace(/&tipoSociedade=([^&]+)*/, "");
+                                }
+                                else {
+                                    var url = url.replace(/[?]tipoSociedade=([^&]+)*[&]/, "?");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url
+                                }
+                                else {
+                                    var url = url;
+                                }
+                            }
+                            window.location = url;
+                        }
+                    });
+
+                    /*---------------------------------------------------------------------
+                                            PARTE DO setorAtividade 
+                    *-------------------------------------------------------------------*/
+                    $('#setorAtividade').on('click', function() {
+                        if ($(this).val() === "bar_cafe") {
+                            var url = window.location.href;
+                            if (url.includes("setorAtividade")) {
+                                if (url.includes("&setorAtividade")) {
+                                    var url = url.replace(/&setorAtividade=([^&]+)*/, "&setorAtividade=bar_cafe");
+                                }
+                                else {
+                                    var url = url.replace(/[?]setorAtividade=([^&]+)*/, "?setorAtividade=bar_cafe");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?setorAtividade=bar_cafe";
+                                }
+                                else {
+                                    var url = url + "&setorAtividade=bar_cafe";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "clinicas") {
+                            var url = window.location.href;
+                            if (url.includes("setorAtividade")) {
+                                if (url.includes("&setorAtividade")) {
+                                    var url = url.replace(/&setorAtividade=([^&]+)*/, "&setorAtividade=clinicas");
+                                }
+                                else {
+                                    var url = url.replace(/[?]setorAtividade=([^&]+)*/, "?setorAtividade=clinicas");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?setorAtividade=clinicas";
+                                }
+                                else {
+                                    var url = url + "&setorAtividade=clinicas";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "const_civ") {
+                            var url = window.location.href;
+                            if (url.includes("setorAtividade")) {
+                                if (url.includes("&setorAtividade")) {
+                                    var url = url.replace(/&setorAtividade=([^&]+)*/, "&setorAtividade=const_civ");
+                                }
+                                else {
+                                    var url = url.replace(/[?]setorAtividade=([^&]+)*/, "?setorAtividade=const_civ");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?setorAtividade=const_civ";
+                                }
+                                else {
+                                    var url = url + "&setorAtividade=const_civ";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "fabricas") {
+                            var url = window.location.href;
+                            if (url.includes("setorAtividade")) {
+                                if (url.includes("&setorAtividade")) {
+                                    var url = url.replace(/&setorAtividade=([^&]+)*/, "&setorAtividade=fabricas");
+                                }
+                                else {
+                                    var url = url.replace(/[?]setorAtividade=([^&]+)*/, "?setorAtividade=fabricas");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?setorAtividade=fabricas";
+                                }
+                                else {
+                                    var url = url + "&setorAtividade=fabricas";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "lojas") {
+                            var url = window.location.href;
+                            if (url.includes("setorAtividade")) {
+                                if (url.includes("&setorAtividade")) {
+                                    var url = url.replace(/&setorAtividade=([^&]+)*/, "&setorAtividade=lojas");
+                                }
+                                else {
+                                    var url = url.replace(/[?]setorAtividade=([^&]+)*/, "?setorAtividade=lojas");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?setorAtividade=lojas";
+                                }
+                                else {
+                                    var url = url + "&setorAtividade=lojas";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "pastelarias") {
+                            var url = window.location.href;
+                            if (url.includes("setorAtividade")) {
+                                if (url.includes("&setorAtividade")) {
+                                    var url = url.replace(/&setorAtividade=([^&]+)*/, "&setorAtividade=pastelarias");
+                                }
+                                else {
+                                    var url = url.replace(/[?]setorAtividade=([^&]+)*/, "?setorAtividade=pastelarias");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?setorAtividade=pastelarias";
+                                }
+                                else {
+                                    var url = url + "&setorAtividade=pastelarias";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "restaurantes") {
+                            var url = window.location.href;
+                            if (url.includes("setorAtividade")) {
+                                if (url.includes("&setorAtividade")) {
+                                    var url = url.replace(/&setorAtividade=([^&]+)*/, "&setorAtividade=restaurantes");
+                                }
+                                else {
+                                    var url = url.replace(/[?]setorAtividade=([^&]+)*/, "?setorAtividade=restaurantes");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?setorAtividade=restaurantes";
+                                }
+                                else {
+                                    var url = url + "&setorAtividade=restaurantes";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "supermercados") {
+                            var url = window.location.href;
+                            if (url.includes("setorAtividade")) {
+                                if (url.includes("&setorAtividade")) {
+                                    var url = url.replace(/&setorAtividade=([^&]+)*/, "&setorAtividade=supermercados");
+                                }
+                                else {
+                                    var url = url.replace(/[?]setorAtividade=([^&]+)*/, "?setorAtividade=supermercados");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?setorAtividade=supermercados";
+                                }
+                                else {
+                                    var url = url + "&setorAtividade=supermercados";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "servicos") {
+                            var url = window.location.href;
+                            if (url.includes("setorAtividade")) {
+                                if (url.includes("&setorAtividade")) {
+                                    var url = url.replace(/&setorAtividade=([^&]+)*/, "&setorAtividade=servicos");
+                                }
+                                else {
+                                    var url = url.replace(/[?]setorAtividade=([^&]+)*/, "?setorAtividade=servicos");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?setorAtividade=servicos";
+                                }
+                                else {
+                                    var url = url + "&setorAtividade=servicos";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "outros") {
+                            var url = window.location.href;
+                            if (url.includes("setorAtividade")) {
+                                if (url.includes("&setorAtividade")) {
+                                    var url = url.replace(/&setorAtividade=([^&]+)*/, "&setorAtividade=outros");
+                                }
+                                else {
+                                    var url = url.replace(/[?]setorAtividade=([^&]+)*/, "?setorAtividade=outros");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?setorAtividade=outros";
+                                }
+                                else {
+                                    var url = url + "&setorAtividade=outros";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "todos") {
+                            var url = window.location.href;
+                            if (url.includes("setorAtividade")) {
+                                if (url.includes("&setorAtividade")) {
+                                    var url = url.replace(/&setorAtividade=([^&]+)*/, "");
+                                }
+                                else {
+                                    var url = url.replace(/[?]setorAtividade=([^&]+)*[&]/, "?");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url
+                                }
+                                else {
+                                    var url = url;
+                                }
+                            }
+                            window.location = url;
+                        }
+                    });
+
+
+                    /*---------------------------------------------------------------------
+                                            PARTE DAS offerRegion 
+                    *-------------------------------------------------------------------*/
+                    $('#offerRegion').on('click', function() {
+                        if ($(this).val() === "porto_norte") {
+                            var url = window.location.href;
+                            if (url.includes("offerRegion")) {
+                                if (url.includes("&offerRegion")) {
+                                    var url = url.replace(/&offerRegion=([^&]+)*/, "&offerRegion=porto_norte");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerRegion=([^&]+)*/, "?offerRegion=porto_norte");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerRegion=porto_norte";
+                                }
+                                else {
+                                    var url = url + "&offerRegion=porto_norte";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "centro") {
+                            var url = window.location.href;
+                            if (url.includes("offerRegion")) {
+                                if (url.includes("&offerRegion")) {
+                                    var url = url.replace(/&offerRegion=([^&]+)*/, "&offerRegion=centro");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerRegion=([^&]+)*/, "?offerRegion=centro");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerRegion=centro";
+                                }
+                                else {
+                                    var url = url + "&offerRegion=centro";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "lisboa") {
+                            var url = window.location.href;
+                            if (url.includes("offerRegion")) {
+                                if (url.includes("&offerRegion")) {
+                                    var url = url.replace(/&offerRegion=([^&]+)*/, "&offerRegion=lisboa");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerRegion=([^&]+)*/, "?offerRegion=lisboa");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerRegion=lisboa";
+                                }
+                                else {
+                                    var url = url + "&offerRegion=lisboa";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "alentejo") {
+                            var url = window.location.href;
+                            if (url.includes("offerRegion")) {
+                                if (url.includes("&offerRegion")) {
+                                    var url = url.replace(/&offerRegion=([^&]+)*/, "&offerRegion=alentejo");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerRegion=([^&]+)*/, "?offerRegion=alentejo");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerRegion=alentejo";
+                                }
+                                else {
+                                    var url = url + "&offerRegion=alentejo";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "algarve") {
+                            var url = window.location.href;
+                            if (url.includes("offerRegion")) {
+                                if (url.includes("&offerRegion")) {
+                                    var url = url.replace(/&offerRegion=([^&]+)*/, "&offerRegion=algarve");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerRegion=([^&]+)*/, "?offerRegion=algarve");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerRegion=algarve";
+                                }
+                                else {
+                                    var url = url + "&offerRegion=algarve";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "acores") {
+                            var url = window.location.href;
+                            if (url.includes("offerRegion")) {
+                                if (url.includes("&offerRegion")) {
+                                    var url = url.replace(/&offerRegion=([^&]+)*/, "&offerRegion=acores");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerRegion=([^&]+)*/, "?offerRegion=acores");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerRegion=acores";
+                                }
+                                else {
+                                    var url = url + "&offerRegion=acores";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "madeira") {
+                            var url = window.location.href;
+                            if (url.includes("offerRegion")) {
+                                if (url.includes("&offerRegion")) {
+                                    var url = url.replace(/&offerRegion=([^&]+)*/, "&offerRegion=madeira");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerRegion=([^&]+)*/, "?offerRegion=madeira");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerRegion=madeira";
+                                }
+                                else {
+                                    var url = url + "&offerRegion=madeira";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "pt") {
+                            var url = window.location.href;
+                            if (url.includes("offerRegion")) {
+                                if (url.includes("&offerRegion")) {
+                                    var url = url.replace(/&offerRegion=([^&]+)*/, "");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerRegion=([^&]+)*[&]/, "?");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url
+                                }
+                                else {
+                                    var url = url;
+                                }
+                            }
+                            window.location = url;
+                        }
+                    });
+
+                    /*---------------------------------------------------------------------
+                                            PARTE DAS offerValue 
+                    *-------------------------------------------------------------------*/
+
+                    $('#offerValue').on('click', function() {
+                        if ($(this).val() === "1k_20k") {
+                            var url = window.location.href;
+                            if (url.includes("offerValue")) {
+                                if (url.includes("&offerValue")) {
+                                    var url = url.replace(/&offerValue=([^&]+)*/, "&offerValue=1k_20k");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerValue=([^&]+)*/, "?offerValue=1k_20k");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerValue=1k_20k";
+                                }
+                                else {
+                                    var url = url + "&offerValue=1k_20k";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "20k_100k") {
+                            var url = window.location.href;
+                            if (url.includes("offerValue")) {
+                                if (url.includes("&offerValue")) {
+                                    var url = url.replace(/&offerValue=([^&]+)*/, "&offerValue=20k_100k");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerValue=([^&]+)*/, "?offerValue=20k_100k");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerValue=20k_100k";
+                                }
+                                else {
+                                    var url = url + "&offerValue=20k_100k";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "100k_500k") {
+                            var url = window.location.href;
+                            if (url.includes("offerValue")) {
+                                if (url.includes("&offerValue")) {
+                                    var url = url.replace(/&offerValue=([^&]+)*/, "&offerValue=100k_500k");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerValue=([^&]+)*/, "?offerValue=100k_500k");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerValue=100k_500k";
+                                }
+                                else {
+                                    var url = url + "&offerValue=100k_500k";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "500k_1M") {
+                            var url = window.location.href;
+                            if (url.includes("offerValue")) {
+                                if (url.includes("&offerValue")) {
+                                    var url = url.replace(/&offerValue=([^&]+)*/, "&offerValue=500k_1M");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerValue=([^&]+)*/, "?offerValue=500k_1M");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerValue=500k_1M";
+                                }
+                                else {
+                                    var url = url + "&offerValue=500k_1M";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "2M_10M") {
+                            var url = window.location.href;
+                            if (url.includes("offerValue")) {
+                                if (url.includes("&offerValue")) {
+                                    var url = url.replace(/&offerValue=([^&]+)*/, "&offerValue=2M_10M");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerValue=([^&]+)*/, "?offerValue=2M_10M");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerValue=2M_10M";
+                                }
+                                else {
+                                    var url = url + "&offerValue=2M_10M";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "plus_10M") {
+                            var url = window.location.href;
+                            if (url.includes("offerValue")) {
+                                if (url.includes("&offerValue")) {
+                                    var url = url.replace(/&offerValue=([^&]+)*/, "&offerValue=plus_10M");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerValue=([^&]+)*/, "?offerValue=plus_10M");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url + "?offerValue=plus_10M";
+                                }
+                                else {
+                                    var url = url + "&offerValue=plus_10M";
+                                }
+                            }
+                            window.location = url;
+                        }
+                        if ($(this).val() === "todos") {
+                            var url = window.location.href;
+                            if (url.includes("offerValue")) {
+                                if (url.includes("&offerValue")) {
+                                    var url = url.replace(/&offerValue=([^&]+)*/, "");
+                                }
+                                else {
+                                    var url = url.replace(/[?]offerValue=([^&]+)*[&]/, "?");
+
+                                }
+                            }
+                            else {
+                                if (url === 'https://portfapp-cloned-noxyo.c9users.io/market') {
+                                    var url = url
+                                }
+                                else {
+                                    var url = url;
+                                }
+                            }
+                            window.location = url;
+                        }
+
+                    });
+                });
+            </script>

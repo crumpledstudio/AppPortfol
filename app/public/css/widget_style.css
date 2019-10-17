@@ -1,0 +1,23 @@
+/*
+*
+*		Widget Definitions
+*
+*
+*
+*
+*
+*
+*/
+
+.size-100 {
+	height: 100px;
+}
+
+/* Oferta */
+.widget-graph {
+	height: 200px;
+}
+.widget-xl-graph {
+	height: 350px;
+}
+

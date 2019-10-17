@@ -1,0 +1,268 @@
+<div class="app-content content">
+      <div class="content-wrapper">
+        <div class="content-header row">
+          <div class="content-header-left col-md-8 col-12 mb-2 breadcrumb-new">
+            <h3 class="content-header-title mb-0 d-inline-block">Oferta</h3> 
+          </div>
+        </div>
+        <div class="content-body">
+        <!-- // 1ª Linha -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <!-- -->
+              <!--
+              <ul class="nav nav-tabs nav-justified">
+                <li class="nav-item">
+                  <a class="nav-link active" id="active-tab" data-toggle="tab" href="#active" aria-controls="active" aria-expanded="true">Resumo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="link-tab" data-toggle="tab" href="#link" aria-controls="link" aria-expanded="false">Contabilidade</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="linkOpt-tab" data-toggle="tab" href="#linkOpt" aria-controls="linkOpt">Comercial</a>
+                </li>
+              </ul>  -->
+              <ul class="nav nav-pills" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="resumo-tab" data-toggle="tab" href="#resumo" role="tab" aria-controls="resumo" aria-selected="true">Resumo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contabilidade-tab" data-toggle="tab" href="#contabilidade" role="tab" aria-controls="contabilidade" aria-selected="false">Contabilidade</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="comercial-tab" data-toggle="tab" href="#comercial" role="tab" aria-controls="comercial" aria-selected="false">Comercial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Imagens</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Recomendações</a>
+                </li>
+              </ul>
+              <!-- -->
+            </div>
+          </div>
+        </div>
+        <!-- -->
+
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active show" id="resumo">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-title text-center">Interessados</h4>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-body">
+                      <div id="bar-chart"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-title text-center">Propostas</h4>                
+                  </div>
+                  <div class="card-content">
+                    <div class="card-body">
+                      <div id="pie-chart"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-title text-center">Receita</h4>
+                  </div>
+                  <div class="card-content widget-graph">
+                    <div class="card-body">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-title text-center">Despesa</h4>
+                  </div>
+                  <div class="card-content widget-graph">
+                    <div class="card-body">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+          <div role="tabpanel" class="tab-pane fade" id="contabilidade">bbb</div>
+          <div role="tabpanel" class="tab-pane fade" id="comercial">ccc</div>
+          <div role="tabpanel" class="tab-pane fade" id="messages">Mensagens</div>
+          <div role="tabpanel" class="tab-pane fade" id="settings">Settings</div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-title text-center">Performance da Empresa</h4>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div>
+                          <input type="text" value="0" class="dial">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title text-center">Empresas do Sector</h3>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-body">
+                      <div class="text-center">
+                        <div>
+                          <input type="text" value="0" class="dial2">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-header"></div>
+                  <div class="card-content">
+                    <div class="card-body">
+
+                      <div class="row">
+                        <div class="col-md-5">
+                          <h3 class="bars"><i class="fa fa-user"></i> Scrollbars</h3>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row match-height">
+                        <div class="col-md-5">
+                          <h3 class="bars"><i class="fa fa-user font-medium-3"></i> Liquidez</h3>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="progress bar-center">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">                               
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row match-height">
+                        <div class="col-md-5">
+                          <h3 class="bars"><i class="fa fa-user font-medium-3"></i> Rentabilidade</h3>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="progress bar-center">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">                               
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row match-height">
+                        <div class="col-md-5">
+                          <h3 class="bars"><i class="fa fa-user font-medium-3"></i> Endividamento</h3>
+                        </div>
+                        <div class="col-md-7">
+                          <div class="progress bar-center">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">                               
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>                
+              </div>
+            </div>            
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-title text-center">Facturação</h3>
+                  </div>
+                  <div class="card-body ">
+                    <div id="area-chart" ></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title text-center">Interessados</h4>
+              </div>
+              <div class="card-content">
+                <div class="card-body">
+                  <div id="bar-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title text-center">Propostas</h4>                
+              </div>
+              <div class="card-content">
+                <div class="card-body">
+                  <div id="pie-chart"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title text-center">Receita</h4>
+              </div>
+              <div class="card-content widget-graph">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title text-center">Despesa</h4>
+              </div>
+              <div class="card-content widget-graph">
+                <div class="card-body">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        </div>
+      </div>
+    </div>

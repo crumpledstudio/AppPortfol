@@ -1,0 +1,326 @@
+/*================================================================================
+	Item Name: Robust - Responsive Admin Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+/*
+	// Nota: re-editado o tamanho do texto +  icons da barra lateral
+*/
+
+
+/*
+	// Icon Size Navigation Menu
+*/
+.vertical-compact-menu .main-menu .navigation > li > a > i {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 1.4rem;  
+	margin: 0.4rem 0;
+	text-align: center; 
+}
+/*
+	// Text Size Navigation Menu
+*/
+.navigation {
+	font-size: 0.9rem;
+	letter-spacing: 0.2px;
+	font-family: "Muli", Georgia, "Times New Roman", Times, serif;
+	font-weight: 600;
+	overflow-y: hidden;
+	padding-bottom: 20px; 
+}
+/*
+	// Navigation Menu Size: 200px
+*/
+/*
+@media (min-width: 992px) {
+	body.vertical-compact-menu .main-menu, body.vertical-compact-menu .vertical-overlay-menu.menu-hide .main-menu, .vertical-overlay-menu.menu-hide body.vertical-compact-menu .main-menu {
+		width: 200px;
+	}
+	body.vertical-compact-menu .navbar .navbar-header {
+	  width: 200px; 
+	}
+	body.vertical-compact-menu .content, body.vertical-compact-menu .footer {
+	  margin-left: 200px; 
+	}
+}
+*/
+/*
+	// Blue Color Setup
+*/
+.navbar-dark {
+	background: #2196F3;
+}
+.navbar-blue {
+	background: #2196F3;
+}
+.footer.footer-blue {
+    background: #2196F3;
+    color: #fff;
+}
+.footer-logo {
+	height: 1.4rem;
+	padding-left:  2.3rem;
+	padding-right: 1.3rem;
+}
+
+/*
+	//  Navbar logo 
+*/
+.header-navbar .navbar-header .navbar-brand .brand-logo {
+    width: 28px;
+}
+
+/*
+	//
+*/
+.logo-blue-md{
+	width: 9.0rem; 
+	height: auto;
+	/* background: url("img/logos/blue_logo_medium.png") top right; */
+	padding: 15px 15px 2px 15px;
+}
+
+.logo-blue-sm{
+	width: 4.5rem; 
+	height: auto;
+	padding: 15px 15px 2px 15px;
+}
+
+
+/*
+	//  Market Setup Cards Definitions
+
+	card-img-market
+ 
+ 		img size:{
+ 				height = 220px; 
+ 				width = 100%
+ 				max-width = 100%
+
+ 				}
+ 		card-price-market:
+https://img01-olxpt.akamaized.net/img-olxpt/937090630_1_261x203_trespasse-loures.jpg
+
+ 		card-business-name: {
+ 		}
+*/
+
+.card-img-market{
+	height: 200px;
+	width: 100%;
+	max-width: 100%;
+}
+
+/*
+	//  Consultor Profile Setup Cards Definitions
+
+.card-profile {
+	background-color: #fff;
+    -webkit-box-shadow: 0 2px 9px 0 rgba(0,0,0,.06);
+    box-shadow: 0 2px 9px 0 rgba(0,0,0,.06);
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+.card-profile .card-profile-body {
+    padding: 30px 15px;
+}
+
+.card-profile .card-profile-body .user-image-wrapper {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.user-pic {
+	padding: 0px 0px 100%;
+
+}
+.user-image {
+	border-radius: 50%;
+	margin: 0;
+	/*  --- //
+	background-color: transparent;
+    border: none;
+}
+
+.card-profile .card-profile-body .user-name {
+    color: #9012fe;
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 2.3px;
+    text-align: center;
+}
+.card-profile .card-profile-body .user-classe {
+    color: #9b9b9b;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1.8px;
+    text-align: center;
+    padding: 0 25px;
+    margin-bottom: 20px;
+}
+
+.card-profile .card-profile-body .action-icons {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.card-profile .card-profile-body .action-icons .action-icon {
+    font-size: 20px;
+    height: 20px;
+    margin-right: 7px;
+    width: 20px;
+}
+.card-profile .card-profile-body .action-icons .action-number {
+    color: #4a4a4a;
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: top;
+}
+.card-profile .card-profile-body .action-buttons {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.card-profile .card-profile-body .action-buttons .action-button {
+    background-color: #fff;
+    border-radius: 5px;
+    color: #9012fe;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    padding: 10px;
+    -webkit-transition: border-color .5s,color .5s,background-color .5s;
+    transition: border-color .5s,color .5s,background-color .5s;
+    width: 40%;
+    min-width: 120px;
+    margin-bottom: 10px;
+    border: 1px solid #9012fe;
+}
+
+
+*/
+.card-profile {
+	background-color: #fff; 
+	-webkit-box-shadow: 0 2px 9px 0 rgba(0,0,0,.06);
+    box-shadow: 0 2px 9px 0 rgba(0,0,0,.06);
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+.card-profile .card-profile-body {
+	padding: 15px 10px;
+    text-align: center !important;
+}
+
+.card-profile .card-profile-body .user-image-wrapper {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.user-pic {
+	padding: 0px 0px 100%;
+
+}
+.user-image {
+	border-radius: 50%;
+	margin: 0;
+	/*  --- */
+	background-color: transparent;
+    border: none;
+}
+
+.card-profile .card-profile-body .user-name {
+    color: #9012fe;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2.3px;
+    text-align: center;
+}
+.card-profile .card-profile-body .user-classe {
+    color: #9b9b9b;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1.8px;
+    text-align: center;
+    padding: 0 25px;
+    margin-bottom: 20px;
+}
+
+.card-profile .card-profile-body .action-icons {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.card-profile .card-profile-body .action-icons .action-icon {
+    font-size: 20px;
+    height: 20px;
+    margin-right: 7px;
+    width: 20px;
+}
+.card-profile .card-profile-body .action-icons .action-number {
+    color: #4a4a4a;
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: top;
+}
+.card-profile .card-profile-body .action-buttons {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.card-profile .card-profile-body .action-buttons .action-button {
+	/*
+    background-color: #fff;
+    border-radius: 5px;
+    color: #9012fe;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    padding: 10px;
+    -webkit-transition: border-color .5s,color .5s,background-color .5s;
+    transition: border-color .5s,color .5s,background-color .5s;
+    width: 40%;
+    min-width: 120px;
+    margin-bottom: 10px;
+    border: 1px solid #9012fe; */
+    background-color: #fff;
+    border-radius: 5px;
+    /*color: #9012fe; */
+    color: #3BAFDA;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.0px;
+    padding: 10px;
+    -webkit-transition: border-color .5s,color .5s,background-color .5s;
+    transition: border-color .5s,color .5s,background-color .5s;
+    width: 40%;
+    min-width: 100px;
+    margin-bottom: 10px;
+    /*border: 1px solid #9012fe; */
+    border: 1px solid #007bff;
+}
+
+
+.card-img-myport {
+    height: 130px;
+    width: 100%;
+    max-width: 100%;
+}

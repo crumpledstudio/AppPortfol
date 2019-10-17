@@ -1,0 +1,1442 @@
+<div class="app-content content">
+    <div class="content-wrapper">
+        <div class="content-header row">
+        </div>
+        <div class="content-body">
+            <section class="flexbox-container">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="col-md-7 col-10 box-shadow-2 p-0">
+                        <div class="card border-grey border-lighten-3 m-0">
+                            <div class="card-header border-0 pb-0">
+                                <div class="card-title text-center">
+                                    <img src="../img/logos/blue_logo_medium.png" class="logo-blue-md" alt="branding logo">
+                                </div>
+                                <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2">
+                                    <span>CRIAR UMA NOVA OFERTA</span>
+                                </h6>
+                            </div>
+                            <div class="card-content collapse show">
+                                <div class="card-body">
+                                    <form action="/market/oferta_coletivo" name="form" method="post" class="number-tab-steps wizard-circle">
+                                        <!-- Step 1 -->
+                                        <h6>Informação sobre a empresa</h6>
+                                        <fieldset class="has-icon-left">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="text" name="nome_empresa" id="nome_empresa" class="form-control input-lg" placeholder="Nome da empresa" value="{{user.nomeEmpresa}}" tabindex="6" required data-validation-required-message="Please enter email address.">
+                                                        <div class="form-control-position">
+                                                            <i class="ft-mail"></i>
+                                                        </div>
+                                                        <div class="help-block font-small-3"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-4 col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="text" name="nif" id="nif" class="form-control input-lg" placeholder="NIF" value="{{user.nif}}" tabindex="7">
+                                                        <div class="form-control-position">
+                                                            <i class="ft-phone"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="text" name="cae" id="cae" class="form-control input-lg" placeholder="CAE" value="{{user.cae}}" tabindex="8">
+                                                        <div class="form-control-position">
+                                                            <i class="ft-globe"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="text" name="capital_social" id="capital_social" class="form-control input-lg" placeholder="Capital Social" value="{{user.capitalSocial}}" tabindex="9">
+                                                        <div class="form-control-position">
+                                                            <i class="ft-phone"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-4 col-md-4">
+                                                    <div class="form-group">
+                                                        <input type="date" name="date" id="date" class="form-control pickadate picker__input picker__input--active" placeholder="data" tabindex="10">
+                                                        <div class="form-control-position">
+                                                            <i class="fas fa-calendar-alt"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-4">
+                                                    <div class="form-group">
+                                                        <select class="form-control" name="setor_atividade" id="setor_atividade" tabindex="11">
+                                                        <option value="Portugal">Setor de Atividade</option>
+                                                        <option value="bar_cafe">Bares e Cafés</option>
+                                                        <option value="clinicas">Clínicas</option>
+                                                        <option value="const_civ">Construção Civil</option>
+                                                        <option value="fabricas">Fábricas</option>
+                                                        <option value="lojas">Lojas</option>
+                                                        <option value="pastelarias">Pastelarias</option>
+                                                        <option value="restaurantes">Restaurantes</option>
+                                                        <option value="supermercados">Supermercados</option>
+                                                        <option value="servicos">Serviços</option>
+                                                        <option value="outros">Outros Negócios</option>
+                                                    </select>
+                                                        <div class="form-control-position">
+                                                            <i class="ft-phone"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-4">
+                                                    <div class="form-group">
+                                                        <select class="form-control" name="tipo_sociedade" id="tipo_sociedade" tabindex="12">
+                                                        <option value="Portugal">Tipo Sociedade</option>
+                                                        <option value="emp_indiv">Emp. em Nome Individual</option>
+                                                        <option value="eirl">E.I.R.L</option>
+                                                        <option value="soc_uni_quotas">Soc. Unipessoal por Quotas</option>
+                                                        <option value="soc_colectivo">Soc. em Nome Colectivo</option>
+                                                        <option value="soc_por_quotas">Sociedade por Quotas</option>
+                                                        <option value="soc_anonima">Sociedade Anónima</option>
+                                                    </select>
+                                                        <div class="form-control-position">
+                                                            <i class="ft-globe"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-5 col-md-5">
+                                                    <div class="form-group">
+                                                        <input type="text" name="morada" id="morada" class="form-control input-lg" placeholder="Morada" value="{{user.morada}}" tabindex="13" required data-validation-required-message="Please enter email address.">
+                                                        <div class="form-control-position">
+                                                            <i class="ft-mail"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-3 col-md-3">
+                                                    <div class="form-group">
+                                                        <input type="text" name="codigo_postal" id="codigo_postal" class="form-control input-lg" placeholder="Codigo Postal" value="{{user.cp1}} - {{user.cp2}}" tabindex="14">
+                                                        <div class="form-control-position">
+                                                            <i class="ft-user"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-4 col-md-4">
+                                                    <div class="form-group">
+                                                        <select class="form-control" name="distrito" id="distrito" tabindex="15">
+                                                        <option value="{{ user.location}}" selected="selected">{{ user.location}}</option>
+                                                        <option value="Aveiro">Aveiro</option>
+                                                        <option value="Beja">Beja</option>
+                                                        <option value="Braga">Braga</option>
+                                                        <option value="Bragança">Bragança</option>
+                                                        <option value="Castelo Branco">Castelo Branco</option>
+                                                        <option value="Coimbra">Coimbra</option>
+                                                        <option value="Evora">Evora</option>
+                                                        <option value="Faro">Faro</option>
+                                                        <option value="Guarda">Guarda</option>
+                                                        <option value="Leiria">Leiria</option>
+                                                        <option value="Lisboa">Lisboa</option>
+                                                        <option value="Portalegre">Portalegre</option>
+                                                        <option value="Porto">Porto</option>
+                                                        <option value="Santarem">Santarem</option>
+                                                        <option value="Setubal">Setubal</option>
+                                                        <option value="Viana do Castelo">Viana do Castelo</option>
+                                                        <option value="Vila Real">Vila Real</option>
+                                                        <option value="Viseu">Viseu</option>
+                                                    </select>
+                                                        <div class="form-control-position">
+                                                            <i class="fas fa-city"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" name="website" id="website" class="form-control input-lg" placeholder="Website" value="{{user.website}}" tabindex="17">
+                                                        <div class="form-control-position">
+                                                            <i class="ft-user"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" name="tipo_atividade" id="tipo_atividade" class="form-control input-lg" placeholder="Tipo de Atividade" tabindex="18">
+                                                        <div class="form-control-position">
+                                                            <i class="ft-user"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" name="social_url" id="social_url" class="form-control input-lg" placeholder="Social URL" tabindex="16">
+                                                        <div class="form-control-position">
+                                                            <i class="ft-user"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" name="definicao_juridica" id="definicao_juridica" class="form-control input-lg" placeholder="Definicao Juridica" tabindex="19">
+                                                        <div class="form-control-position">
+                                                            <i class="ft-user"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" name="logo_url" id="logo_url" class="form-control input-lg" placeholder="Logo URL" tabindex="22">
+                                                        <div class="form-control-position">
+                                                            <i class="ft-user"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" name="foto_url" id="foto_url" class="form-control input-lg" placeholder="Foto URL" tabindex="23">
+                                                        <div class="form-control-position">
+                                                            <i class="ft-user"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <!-- Step 2 -->
+                                        <h6>Informação sobre a oferta</h6>
+                                        <fieldset class="has-icon-left">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <select class="form-control" name="tipo_negocio" id="tipo_negocio">
+                            <option value="null" selected="selected">Selecione uma opção</option>
+                            <option value="Fusão">Fusão</option>
+                            <option value="Consórcio">Consórcio</option>
+                            <option value="Aumento de Capital">Aumento de Capital</option>
+                            <option value="Financiamento">Financiamento</option>
+                            <option value="Quotas">Quotas</option>
+                            <option value="Trespasse">Trespasse</option>
+                            <option value="Ações">Acões</option>
+                            <option value="Cessão de Exploração">Cessão de exploração</option>
+                          </select>
+                                                        <div class="form-control-position">
+                                                            <i class="ft-user"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group position-relative" name="quotas_form" id="quotas_form" style="display:none; margin-bottom:0px;">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Descrição" name="quotas_descricao">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-user"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="quotas_valor" id="quotas_valor">
+                            <option value="" disabled selected>Valor a investir</option>
+                            <option value="€1.000 - 20.000">€1.000 - 20.000</option>
+                            <option value="€20.000 - 100.000">€20.000 - 100.000</option>
+                            <option value="€100.000 - 500.000">€100.000 - 500.000</option>
+                            <option value="€500.000 - 2.000.000">€500.000 - 2.000.000</option>
+                            <option value="€2.000.000 - 10.000.000">€2.000.000 - 10.000.000</option>
+                            <option value="+ €10.000.000">+ €10.000.000</option>
+                          </select>
+                                                            <div class="form-control-position">
+                                                                <i class="fas fa-euro-sign"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Percentagem" name="quotas_percentagem">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="quotas_forma_aquisicao">
+                              <option value="null" selected="selected">Forma de aquisição</option>
+                              <option value="Dinheiro">Dinheiro</option>
+                              <option value="Especie">Em especie</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="quotas_moeda">
+                              <option value="null" selected="selected">Moeda de aquisição</option>
+                              <option value="Euros">Euros</option>
+                              <option value="Outra">Dolares</option>
+                              <option value="Outra">Libras</option>
+                              <option value="Outra">Reais</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="quotas_modalidade_pagamento">
+                              <option value="null" selected="selected">Modalidade de pagamento</option>
+                              <option value="Pronto pagamento">Pronto pagamento</option>
+                              <option value="Diferida">Diferida</option>
+                              <option value="Prestacoes">Em prestações</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="quotas_contitularidade">
+                              <option value="null" selected="selected">Contitularidade</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Nao">Não</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="quotas_consentimento">
+                              <option value="null" selected="selected">Consentimento da sociedade</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Nao">Não</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="quotas_opcao_recompra" id="quotas_opcao_recompra">
+                              <option value="null" selected="selected">Opção de recompra</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Nao">Não</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col" id="limite_recompra_show" name="limite_recompra_show" style="display:none;">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="quotas_limite_recompra" id="quotas_limite_recompra">
+                              <option value="null" selected="selected">Limite de recompra</option>
+                              <option value="Sim">6 meses</option>
+                              <option value="Sim">1 ano</option>
+                              <option value="Sim">2 anos</option>
+                              <option value="Sim">3 anos</option>
+                              <option value="Sim">4 anos</option>
+                              <option value="Sim">5 anos</option>
+                              <option value="Sim">6 anos</option>
+                              <option value="Sim">7 anos</option>
+                              <option value="Sim">8 anos</option>
+                              <option value="Sim">9 anos</option>
+                              <option value="Sim">10 anos</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col" id="percentagem_recompra_show" name="percentagem_recompra_show" style="display:none;">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Percentagem de recompra" name="quotas_percentagem_recompra">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group position-relative" name="acoes_form" id="acoes_form" style="display:none; margin-bottom:0px;">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Descrição" name="acoes_descricao">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <select class="form-control" name="acoes_valor" id="acoes_valor">
+                            <option value="" disabled selected>Valor a investir</option>
+                            <option value="€1.000 - 20.000">€1.000 - 20.000</option>
+                            <option value="€20.000 - 100.000">€20.000 - 100.000</option>
+                            <option value="€100.000 - 500.000">€100.000 - 500.000</option>
+                            <option value="€500.000 - 2.000.000">€500.000 - 2.000.000</option>
+                            <option value="€2.000.000 - 10.000.000">€2.000.000 - 10.000.000</option>
+                            <option value="+ €10.000.000">+ €10.000.000</option>
+                          </select>
+                                                        <div class="form-control-position">
+                                                            <i class="fas fa-euro-sign"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Totatildade de acoes da empresa" name="acoes_totalidade">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Valor por unidade" name="acoes_valor_unidade">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Unidades que pretende vender/comprar" name="acoes_unidades">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="acoes_forma_aquisicao">
+                              <option value="null" selected="selected">Forma de aquisição</option>
+                              <option value="Dinheiro">Dinheiro</option>
+                              <option value="Especie">Em especie</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="acoes_transmissao_condicionada">
+                              <option value="null" selected="selected">Transmissão condicionada</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Nao">Não</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="acoes_modalidade_pagamento">
+                              <option value="null" selected="selected">Modalidade de pagamento</option>
+                              <option value="Pronto pagamento">Pronto pagamento</option>
+                              <option value="Diferidas">Diferida</option>
+                              <option value="Prestacoes">Em prestações</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="acoes_tipo_acao">
+                              <option value="null" selected="selected">Tipo de acção</option>
+                              <option value="Ordinarias">Ordinárias</option>
+                              <option value="Preferenciais">Preferenciais</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="acoes_forma_circulacao">
+                              <option value="null" selected="selected">Forma de circulação</option>
+                              <option value="Nominativas">Nominativas</option>
+                              <option value="Portador">Portador</option>
+                              <option value="Escriturais">Escriturais</option>
+                              <option value="Endossaveis">Endossáveis</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group position-relative" name="trespasse_form" id="trespasse_form" style="display:none; margin-bottom:0px;">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Descrição" name="trespasse_descricao">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <select class="form-control" name="trespasse_valor_mercado" id="trespasse_valor_mercado">
+                            <option value="" disabled selected>Valor a investir</option>
+                            <option value="€1.000 - 20.000">€1.000 - 20.000</option>
+                            <option value="€20.000 - 100.000">€20.000 - 100.000</option>
+                            <option value="€100.000 - 500.000">€100.000 - 500.000</option>
+                            <option value="€500.000 - 2.000.000">€500.000 - 2.000.000</option>
+                            <option value="€2.000.000 - 10.000.000">€2.000.000 - 10.000.000</option>
+                            <option value="+ €10.000.000">+ €10.000.000</option>
+                          </select>
+                                                        <div class="form-control-position">
+                                                            <i class="fas fa-euro-sign"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="trespasse_modalidade">
+                              <option value="null" selected="selected">Modalidade de transmissão</option>
+                              <option value="Establecimento e local ">Establecimento e local</option>
+                              <option value="Establecimento">Só establecimento</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="trespasse_local" id="trespasse_local">
+                              <option value="null" selected="selected">Local</option>
+                              <option value="Arrendado">Arrendado</option>
+                              <option value="Proprio">Próprio</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col col-sm-5 col-md-5" name="trespasse_senhorio_div" id="trespasse_senhorio_div" style="display:none;">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="trespasse_senhorio" id="trespasse_senhorio">
+                              <option value="null" selected="selected">Conhecimento e autorização do senhorio</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Nao">Não</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="trespasse_modalidade_pagamento">
+                              <option value="null" selected="selected">Modalidade de pagamento</option>
+                              <option value="Pronto pagamento">Pronto pagamento</option>
+                              <option value="Prestacoes">Prestações</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="trespasse_forma_pagamento">
+                              <option value="null" selected="selected">Forma de pagamento</option>
+                              <option value="Dinheiro">Dinheiro</option>
+                              <option value="Em especie">Em especie</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="trespasse_clausula">
+                              <option value="null" selected="selected">Cláusula de não concorrência</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Nao">Não</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group position-relative" name="cessao_exploracao_form" id="cessao_exploracao_form" style="display:none; margin-bottom:0px;">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-12 col-md-12">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Descrição" name="cessao_descricao">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-user"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <select class="form-control" name="cessao_valor_mercado" id="cessao_valor_mercado">
+                            <option value="" disabled selected>Valor a investir</option>
+                            <option value="€1.000 - 20.000">€1.000 - 20.000</option>
+                            <option value="€20.000 - 100.000">€20.000 - 100.000</option>
+                            <option value="€100.000 - 500.000">€100.000 - 500.000</option>
+                            <option value="€500.000 - 2.000.000">€500.000 - 2.000.000</option>
+                            <option value="€2.000.000 - 10.000.000">€2.000.000 - 10.000.000</option>
+                            <option value="+ €10.000.000">+ €10.000.000</option>
+                          </select>
+                                                        <div class="form-control-position">
+                                                            <i class="fas fa-euro-sign"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="cessao_periodicidade">
+                              <option value="null" selected="selected">Periodicidade de pagamento</option>
+                              <option value="Mensal">Mensal</option>
+                              <option value="Trimestral">Trimestral</option>
+                              <option value="Semestral">Semestral</option>
+                              <option value="Anual">Anual</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="cessao_duracao">
+                              <option value="null" selected="selected">Duração do contrato</option>
+                              <option value="Sim">6 meses</option>
+                              <option value="Sim">1 ano</option>
+                              <option value="Sim">2 anos</option>
+                              <option value="Sim">3 anos</option>
+                              <option value="Sim">4 anos</option>
+                              <option value="Sim">5 anos</option>
+                              <option value="Sim">6 anos</option>
+                              <option value="Sim">7 anos</option>
+                              <option value="Sim">8 anos</option>
+                              <option value="Sim">9 anos</option>
+                              <option value="Sim">10 anos</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="cessao_renovacao">
+                              <option value="null" selected="selected">Renovação</option>
+                              <option value="Automatica">Automática</option>
+                              <option value="Negociada">Negociada</option>
+                              <option value="Nao renovavel">Não renovavel</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="cessao_inventario">
+                              <option value="null" selected="selected">Inventário incluído</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Nao">Não</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="cessao_trabalhadores">
+                              <option value="null" selected="selected">Com trabalhadores ao serviço</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Nao">Não</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group position-relative" name="fusao_form" id="fusao_form" style="display:none; margin-bottom:0px;">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Descrição" name="fusao_descricao" id="fusao_descricao">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <select class="form-control" name="fusao_valor_mercado" id="fusao_valor_mercado">
+                            <option value="" disabled selected>Valor a investir</option>
+                            <option value="€1.000 - 20.000">€1.000 - 20.000</option>
+                            <option value="€20.000 - 100.000">€20.000 - 100.000</option>
+                            <option value="€100.000 - 500.000">€100.000 - 500.000</option>
+                            <option value="€500.000 - 2.000.000">€500.000 - 2.000.000</option>
+                            <option value="€2.000.000 - 10.000.000">€2.000.000 - 10.000.000</option>
+                            <option value="+ €10.000.000">+ €10.000.000</option>
+                          </select>
+                                                        <div class="form-control-position">
+                                                            <i class="fas fa-euro-sign"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="fusao_modalidade">
+                              <option value="null" selected="selected">Modalidade de fusão</option>
+                              <option value="Incorporacao">Incorporação</option>
+                              <option value="Concentracao">Concentração</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="fusao_modo_intervencao">
+                              <option value="null" selected="selected">Forma de intervenção</option>
+                              <option value="Sociedade incorporante">Sociedade incorporante</option>
+                              <option value="Sociedade incorporada">Sociedade incorporada</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="fusao_objeto">
+                              <option value="null" selected="selected">Objecto da transacção</option>
+                              <option value="Acoes">Acoes</option>
+                              <option value="Quotas">Quotas</option>
+                              <option value="Ativos">Ativos</option>
+                              <option value="Outros">Outros</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Motivos" name="fusao_motivos">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Objetivos" name="fusao_objetivos">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="fusao_fiscalizacao">
+                              <option value="null" selected="selected">Fiscalização do projecto</option>
+                              <option value="Fiscalizacao interna">Fiscalização interna</option>
+                              <option value="Oficial de contas">Revisão de oficial de contas</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="fusao_projeto">
+                              <option value="null" selected="selected">Projecto de fusão</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Nao">Não</option>
+                              <option value="Em elaboracao">Em elaboração</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="fusao_direitos">
+                              <option value="null" selected="selected">Sócios ou accionistas com direitos especiais</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Nao">Não</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Modalidade de protecção dos credores" name="fusao_protecao_credores">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group position-relative" name="consorcio_form" id="consorcio_form" style="display:none; margin-bottom:0px;">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Descrição" name="consorcio_descricao">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <select class="form-control" name="consorcio_valor_mercado" id="consorcio_valor_mercado">
+                            <option value="" disabled selected>Valor a investir</option>
+                            <option value="€1.000 - 20.000">€1.000 - 20.000</option>
+                            <option value="€20.000 - 100.000">€20.000 - 100.000</option>
+                            <option value="€100.000 - 500.000">€100.000 - 500.000</option>
+                            <option value="€500.000 - 2.000.000">€500.000 - 2.000.000</option>
+                            <option value="€2.000.000 - 10.000.000">€2.000.000 - 10.000.000</option>
+                            <option value="+ €10.000.000">+ €10.000.000</option>
+                          </select>
+                                                        <div class="form-control-position">
+                                                            <i class="fas fa-euro-sign"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Objecto" name="consorcio_objeto">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="consorcio_modalidade">
+                              <option value="null" selected="selected">Modalidade</option>
+                              <option value="Interno">Interno</option>
+                              <option value="Externo">Externo</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="consorcio_contribuicao">
+                              <option value="null" selected="selected">Contribuição pretendida</option>
+                              <option value="Em percentagem">Em percentagem</option>
+                              <option value="A combinar">A combinar</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="consorcio_participacao">
+                              <option value="null" selected="selected">Participação em lucros e perdas</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Nao">Não</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <select class="form-control" id="consorcio_duracao" name="consorcio_duracao">
+                              <option value="null" selected="selected">Duração</option>
+                              <option value="Convencionadas">Convencionada</option>
+                              <option value="Outras">Outra</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3" id="duracao_consorcio_qual" name="duracao_consorcio_qual" style="display:none;">
+                                                        <input type="text" class="form-control" placeholder="Expecifique duração" name="consorcio_duracao2">
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Natureza da actividade a desenvolver" name="consorcio_natureza">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="consorcio_local">
+                              <option value="null" selected="selected">Local a Desenvolver</option>
+                              <option value="porto_norte">Porto e Norte</option>
+                              <option value="centro">Centro de Portugal</option>
+                              <option value="lisboa">Lisboa Região</option>
+                              <option value="alentejo">Alentejo</option>
+                              <option value="algarve">Algarve</option>
+                              <option value="acores">Açores</option>
+                              <option value="madeira">Madeira</option>
+                              <option value="pt">Todas as Regiões</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="consorcio_conselho">
+                              <option value="null" selected="selected">Conselho de orientação e fiscalização</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Nao">Não</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group position-relative" name="aumento_capital_form" id="aumento_capital_form" style="display:none; margin-bottom:0px;">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Descrição" name="aumento_capital_descricao">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <select class="form-control" name="aumento_capital_valor_mercado" id="aumento_capital_valor_mercado">
+                            <option value="" disabled selected>Valor a investir</option>
+                            <option value="€1.000 - 20.000">€1.000 - 20.000</option>
+                            <option value="€20.000 - 100.000">€20.000 - 100.000</option>
+                            <option value="€100.000 - 500.000">€100.000 - 500.000</option>
+                            <option value="€500.000 - 2.000.000">€500.000 - 2.000.000</option>
+                            <option value="€2.000.000 - 10.000.000">€2.000.000 - 10.000.000</option>
+                            <option value="+ €10.000.000">+ €10.000.000</option>
+                          </select>
+                                                        <div class="form-control-position">
+                                                            <i class="fas fa-euro-sign"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <select class="form-control" id="aumento_capital_modalidade" name="aumento_capital_modalidade">
+                              <option value="null" selected="selected">Modalidade do aumento de capital</option>
+                              <option value="Novas Entradas">Novas entradas</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col" name="aumento_capital_modalidade_qual" id="aumento_capital_modalidade_qual" style="display:none;">
+                                                        <input type="text" class="form-control" placeholder="Modalidade do aumento de captital" name="aumento_capital_modalidade2">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Montante do aumento de capital" name="aumento_capital_montante">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Montante nominal das novas participações" name="aumento_capital_montante_nominal">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="aumento_capital_natureza">
+                              <option value="null" selected="selected">Natureza das novas entradas</option>
+                              <option value="Dinheiro">Dinheiro</option>
+                              <option value="Em especie">Em especie</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="aumento_capital_modalidade_pagamento">
+                              <option value="null" selected="selected">Modalidade de pagamento</option>
+                              <option value="Pronto pagamento">Pronto pagamento</option>
+                              <option value="Diferida">Diferida</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" id="aumento_capital_premio" name="aumento_capital_premio">
+                              <option value="null" selected="selected">Prémio de emissão</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Nao">Não</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col" name="valor_aumento_premio_show" id="valor_aumento_premio_show" style="display:none;">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Valor prémio de emissão" name="aumento_capital_valor_premio">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col" name="prazo_aumento_premio_show" id="prazo_aumento_premio_show" style="display:show;">
+                                                        <div class="form-group">
+                                                            <input type="date" class="form-control" placeholder="Prazo para efectuar as entradas" name="aumento_capital_prazo">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group position-relative" name="financiamento_form" id="financiamento_form" style="display:none; margin-bottom:0px;">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Descrição" name="financiamento_descricao">
+                                                    <div class="form-control-position">
+                                                        <i class="ft-user"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <select class="form-control" name="financiamento_valor_mercado" id="financiamento_valor_mercado">
+                            <option value="" disabled selected>Valor a investir</option>
+                            <option value="€1.000 - 20.000">€1.000 - 20.000</option>
+                            <option value="€20.000 - 100.000">€20.000 - 100.000</option>
+                            <option value="€100.000 - 500.000">€100.000 - 500.000</option>
+                            <option value="€500.000 - 2.000.000">€500.000 - 2.000.000</option>
+                            <option value="€2.000.000 - 10.000.000">€2.000.000 - 10.000.000</option>
+                            <option value="+ €10.000.000">+ €10.000.000</option>
+                          </select>
+                                                        <div class="form-control-position">
+                                                            <i class="fas fa-euro-sign"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-6">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Valor de financiamento pretendido" name="financiamento_valor">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="financiamento_tipo">
+                              <option value="null" selected="selected">Tipo de investimento</option>
+                              <option value="Financiadores individuais">Financiadores individuais</option>
+                              <option value="Bancos">Bancos</option>
+                              <option value="Leasing">Leasing</option>
+                              <option value="Factoring">Factoring</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="financiamento_modalidade">
+                              <option value="null" selected="selected">Modalidade de financiamento</option>
+                              <option value="Dinheiro">Dinheiro</option>
+                              <option value="Servicos">Serviços</option>
+                              <option value="Material">Material</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="financiamento_garantias">
+                              <option value="null" selected="selected">Garantias</option>
+                              <option value="Sim">Sim</option>
+                              <option value="Nao">Não</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <input type="date" class="form-control" placeholder="Prazo de reembolso" name="financiamento_prazo">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Taxa de juros" name="financiamento_taxa_juros">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Periodicidade de pagamento juros" name="financiamento_periocidade_juros">
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group position-relative">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="offer_regiao">
+                              <option value="null" selected="selected">Selecione uma opção</option>
+                              <option value="porto_norte">Porto e Norte</option>
+                              <option value="centro">Centro de Portugal</option>
+                              <option value="lisboa">Lisboa Região</option>
+                              <option value="alentejo">Alentejo</option>
+                              <option value="algarve">Algarve</option>
+                              <option value="acores">Açores</option>
+                              <option value="madeira">Madeira</option>
+                              <option value="pt">Todas as Regiões</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="setor_atividade_oferta">
+                              <option value="null" selected="selected">Selecione uma opção</option>
+                              <option value="bar_cafe">Bares e Cafés</option>
+                              <option value="clinicas">Clínicas</option>
+                              <option value="const_civ">Construção Civil</option>
+                              <option value="fabricas">Fábricas</option>
+                              <option value="lojas">Lojas</option>
+                              <option value="pastelarias">Pastelarias</option>
+                              <option value="restaurantes">Restaurantes</option>
+                              <option value="supermercados">Supermercados</option>
+                              <option value="servicos">Serviços</option>
+                              <option value="outros">Outros Negócios</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-mail"></i>
+                                                            </div>
+                                                            <div class="help-block font-small-3"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-4">
+                                                        <div class="form-group">
+                                                            <select class="form-control" name="tipo_sociedade_oferta" id="tipo_sociedade">
+                              <option value="null" selected="selected">Selecione uma opção</option>
+                              <option value="emp_indiv">Emp. em Nome Individual</option>
+                              <option value="eirl">E.I.R.L</option>
+                              <option value="soc_uni_quotas">Soc. Unipessoal por Quotas</option>
+                              <option value="soc_colectivo">Soc. em Nome Colectivo</option>
+                              <option value="soc_por_quotas">Sociedade por Quotas</option>
+                              <option value="soc_anonima">Sociedade Anónima</option>
+                            <option value="indiferente">Indiferente</option>
+                            </select>
+                                                            <div class="form-control-position">
+                                                                <i class="ft-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>‌​
+
+<script>
+    $(document).ready(function() {
+        $('#tipo_negocio').on('change', function() {
+            if ($(this).val() === "Fusão") {
+                $("#fusao_form").show()
+            }
+            else {
+                $("#fusao_form").hide()
+            }
+        });
+        $('#tipo_negocio').on('change', function() {
+            if ($(this).val() === "Consórcio") {
+                $("#consorcio_form").show()
+            }
+            else {
+                $("#consorcio_form").hide()
+            }
+        });
+        $('#tipo_negocio').on('change', function() {
+            if ($(this).val() === "Aumento de Capital") {
+                $("#aumento_capital_form").show()
+            }
+            else {
+                $("#aumento_capital_form").hide()
+            }
+        });
+        $('#tipo_negocio').on('change', function() {
+            if ($(this).val() === "Financiamento") {
+                $("#financiamento_form").show()
+            }
+            else {
+                $("#financiamento_form").hide()
+            }
+        });
+        $('#tipo_negocio').on('change', function() {
+            if ($(this).val() === "Quotas") {
+                $("#quotas_form").show()
+            }
+            else {
+                $("#quotas_form").hide()
+            }
+        });
+        $('#tipo_negocio').on('change', function() {
+            if ($(this).val() === "Trespasse") {
+                $("#trespasse_form").show()
+            }
+            else {
+                $("#trespasse_form").hide()
+            }
+        });
+        $('#tipo_negocio').on('change', function() {
+            if ($(this).val() === "Ações") {
+                $("#acoes_form").show()
+            }
+            else {
+                $("#acoes_form").hide()
+            }
+        });
+        $('#tipo_negocio').on('change', function() {
+            if ($(this).val() === "Cessão de Exploração") {
+                $("#cessao_exploracao_form").show()
+            }
+            else {
+                $("#cessao_exploracao_form").hide()
+            }
+        });
+        $('#tipo_negocio').on('change', function() {
+            if ($(this).val() === "ideia_negocio") {
+                $("#ideia_negocio_form").show()
+            }
+            else {
+                $("#ideia_negocio_form").hide()
+            }
+        });
+
+        $('#trespasse_local').on('change', function() {
+            if ($(this).val() === "Arrendado") {
+                $("#trespasse_senhorio_div").show()
+            }
+            else {
+                $("#trespasse_senhorio_div").hide()
+            }
+        });
+
+        $('#aumento_capital_modalidade').on('change', function() {
+            if ($(this).val() === "Outras") {
+                $("#aumento_capital_modalidade_qual").show()
+            }
+            else {
+                $("#aumento_capital_modalidade_qual").hide()
+            }
+        });
+
+        $('#consorcio_duracao').on('change', function() {
+            if ($(this).val() === "Outras") {
+                $("#duracao_consorcio_qual").show()
+            }
+            else {
+                $("#duracao_consorcio_qual").hide()
+            }
+        });
+
+        $('#quotas_opcao_recompra').on('change', function() {
+            if ($(this).val() === "Sim") {
+                $("#limite_recompra_show").show()
+                $("#percentagem_recompra_show").show()
+            }
+            else {
+                $("#limite_recompra_show").hide()
+                $("#percentagem_recompra_show").hide()
+            }
+        });
+
+        $('#aumento_capital_premio').on('change', function() {
+            if ($(this).val() === "Sim") {
+                $("#valor_aumento_premio_show").show()
+                $("#prazo_aumento_premio_show").show()
+            }
+            else {
+                $("#valor_aumento_premio_show").hide()
+                $("#prazo_aumento_premio_show").show()
+            }
+        });
+
+    });
+</script>

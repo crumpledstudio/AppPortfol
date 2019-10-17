@@ -1,0 +1,25 @@
+{
+  "name": "main-api",
+  "version": "2.0.0",
+  "description": " Main API do projecto versão de teste e re-utilizacao",
+  "main": "server.js",
+  "repository": "",
+  "author": "Portfollium",
+  "dependencies": {
+    "async": "^3.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "ip": "^1.1.5",
+    "jwt-simple": "^0.5.6",
+    "mongoose": "^5.7.5",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "node-datetime": "^2.1.2",
+    "nodemailer": "^6.3.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^1.2.1",
+    "randomstring": "^1.1.5",
+    "request": "^2.88.0"
+  }
+}

@@ -1,0 +1,200 @@
+<div class="app-content content">
+    <div class="content-wrapper">
+        <div class="content-header row">
+        </div>
+        <div class="content-body">
+            <section class="flexbox-container">
+                <div class="col-12 d-flex align-items-center justify-content-center">
+                    <div class="col-md-4 col-10 box-shadow-2 p-0">
+                        <div class="card border-grey border-lighten-3 m-0">
+                            <div class="card-header border-0 pb-0">
+                                <div class="card-title text-center">
+                                    <img src="../img/logos/blue_logo_medium.png" class="logo-blue-md" alt="branding logo">
+                                </div>
+                                <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2">
+                                    <span>Please Sign Up</span>
+                                </h6>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <form class="form-horizontal" method="post" action="/user/nifvalidation" novalidate>
+                                        <fieldset class="form-group position-relative has-icon-left">
+                                            <select class="form-control" name="tipo_cliente" id="tipo_cliente">
+                                                <option value="null" selected="selected">Tipo de Cliente</option>
+                                                <option value="investor">Investidor</option>
+                                                <option value="business">Negocio</option>
+                                                <option value="business_ideia">Ideia de negocio</option>
+                                            </select>
+                                            <div class="form-control-position">
+                                                <i class="ft-user"></i>
+                                            </div>
+                                        </fieldset>
+                                        <fieldset class="form-group position-relative has-icon-left" name="investor_type" id="investor_type" style="display:none;">
+                                            <select class="form-control" name="tipo_investidor" id="tipo_investidor">
+                                                <option value="null" selected="selected">Tipo de Investidor</option>
+                                                <option value="private">Investidor Privado</option>
+                                                <option value="colective">Investidor Coletivo</option>
+                                            </select>
+                                            <div class="form-control-position">
+                                                <i class="ft-user"></i>
+                                            </div>
+                                            <div class="help-block font-small-3"></div>
+                                        </fieldset>
+                                        <fieldset class="form-group position-relative has-icon-left" name="private_form" id="private_form" style="display:none;">
+                                            <input type="text" name="nif_privado" id="nif_privado" class="form-control input-lg" placeholder="NIF" tabindex="1">
+                                            <div class="form-control-position">
+                                                <i class="ft-briefcase"></i>
+                                            </div>
+                                            <div class="help-block font-small-3"></div>
+                                        </fieldset>
+                                        <fieldset class="form-group position-relative has-icon-left" name="colective_form" id="colective_form" style="display:none;">
+                                            <input type="text" name="nif_colective" id="nif_colective" class="form-control input-lg" placeholder="NIF" tabindex="1">
+                                            <div class="form-control-position">
+                                                <i class="ft-briefcase"></i>
+                                            </div>
+                                            <div class="help-block font-small-3"></div>
+                                        </fieldset>
+                                        <fieldset class="form-group position-relative has-icon-left" name="colective_form2" id="colective_form2" style="display:none;">
+                                            <select class="form-control" name="distrito_colective">
+                                                <option value="null" selected="selected">Selecione a cidade</option>
+                                                <option value="Aveiro">Aveiro</option>
+                                                <option value="Beja">Beja</option>
+                                                <option value="Braga">Braga</option>
+                                                <option value="Bragança">Bragança</option>
+                                                <option value="Castelo Branco">Castelo Branco</option>
+                                                <option value="Coimbra">Coimbra</option>
+                                                <option value="Evora">Evora</option>
+                                                <option value="Faro">Faro</option>
+                                                <option value="Guarda">Guarda</option>
+                                                <option value="Leiria">Leiria</option>
+                                                <option value="Lisboa">Lisboa</option>
+                                                <option value="Portalegre">Portalegre</option>
+                                                <option value="Porto">Porto</option>
+                                                <option value="Santarem">Santarem</option>
+                                                <option value="Setubal">Setubal</option>
+                                                <option value="Viana do Castelo">Viana do Castelo</option>
+                                                <option value="Vila Real">Vila Real</option>
+                                                <option value="Viseu">Viseu</option>
+                                            </select>
+                                            <div class="form-control-position">
+                                                <i class="ft-globe"></i>
+                                            </div>
+                                            <div class="help-block font-small-3"></div>
+                                        </fieldset>
+                                        <fieldset class="form-group position-relative has-icon-left" name="business_form" id="business_form" style="display:none;">
+                                            <input type="text" name="business_nif" id="business_nif" class="form-control input-lg" placeholder="NIF" tabindex="1">
+                                            <div class="form-control-position">
+                                                <i class="ft-briefcase"></i>
+                                            </div>
+                                            <div class="help-block font-small-3"></div>
+                                        </fieldset>
+                                        <fieldset class="form-group position-relative has-icon-left" name="business_form2" id="business_form2" style="display:none;">
+                                            <select class="form-control" name="distrito_business">
+                                                <option value="null" selected="selected">Selecione o distrito</option>
+                                                <option value="Aveiro">Aveiro</option>
+                                                <option value="Beja">Beja</option>
+                                                <option value="Braga">Braga</option>
+                                                <option value="Bragança">Bragança</option>
+                                                <option value="Castelo Branco">Castelo Branco</option>
+                                                <option value="Coimbra">Coimbra</option>
+                                                <option value="Evora">Evora</option>
+                                                <option value="Faro">Faro</option>
+                                                <option value="Guarda">Guarda</option>
+                                                <option value="Leiria">Leiria</option>
+                                                <option value="Lisboa">Lisboa</option>
+                                                <option value="Portalegre">Portalegre</option>
+                                                <option value="Porto">Porto</option>
+                                                <option value="Santarem">Santarem</option>
+                                                <option value="Setubal">Setubal</option>
+                                                <option value="Viana do Castelo">Viana do Castelo</option>
+                                                <option value="Vila Real">Vila Real</option>
+                                                <option value="Viseu">Viseu</option>
+                                            </select>
+                                            <div class="form-control-position">
+                                                <i class="ft-globe"></i>
+                                            </div>
+                                            <div class="help-block font-small-3"></div>
+                                        </fieldset>
+                                        <fieldset class="form-group position-relative has-icon-left" name="business_ideia_form" id="business_ideia_form" style="display:none;">
+                                            <input type="text" name="nif_business_idea" id="nif_business_idea" class="form-control input-lg" placeholder="NIF" tabindex="1">
+                                            <div class="form-control-position">
+                                                <i class="ft-briefcase"></i>
+                                            </div>
+                                            <div class="help-block font-small-3"></div>
+                                        </fieldset>
+                                        <div class="row">
+                                            <div class="col-8 col-sm-6 col-md-6">
+                                                <a href="login" class="btn btn-danger btn-lg btn-block">
+                                                    <i class="ft-unlock"></i> Cancelar</a>
+                                            </div>
+                                            <div class="col-8 col-sm-6 col-md-6">
+                                                <button type="submit" class="btn btn-info btn-lg btn-block">
+                                                    <i class="ft-user"></i> Continuar</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>‌​
+
+<script>
+    $(document).ready(function() {
+        $('#tipo_cliente').on('change', function() {
+            if ($(this).val() === "investor") {
+                $("#investor_type").show()
+            }
+            else {
+                $("#investor_type").hide()
+            }
+        });
+
+        $('#tipo_cliente').on('change', function() {
+            if ($(this).val() === "business") {
+                $("#business_form").show()
+                $("#business_form2").show()
+                $("#private_form").hide()
+                $("#colective_form").hide()
+                $("#colective_form2").hide()
+            }
+            else {
+                $("#business_form").hide()
+                $("#business_form2").hide()
+            }
+        });
+        $('#tipo_cliente').on('change', function() {
+            if ($(this).val() === "business_ideia") {
+                $("#business_ideia_form").show()
+            }
+            else {
+                $("#business_ideia_form").hide()
+            }
+        });
+        $('#tipo_investidor').on('change', function() {
+            if ($(this).val() === "private") {
+                $("#private_form").show()
+            }
+            else {
+                $("#private_form").hide()
+            }
+        });
+        $('#tipo_investidor').on('change', function() {
+            if ($(this).val() === "colective") {
+                $("#colective_form").show()
+                $("#colective_form2").show()
+            }
+            else {
+                $("#colective_form").hide()
+                $("#colective_form2").hide()
+            }
+        });
+    });
+</script>

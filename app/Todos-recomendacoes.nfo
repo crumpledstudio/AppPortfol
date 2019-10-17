@@ -1,0 +1,29 @@
+"offer_id": 5
+"offerClass": "Aumento de Capital",
+"offerRegion": "Porto e Norte",
+"sectorActividade": "Serviços",
+"offerValor": 7480000,
+"details": {
+            "mainPicUrl": "http://lorempixel.com/640/480/nightlife",
+            "logoUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/overcloacked/128.jpg"
+            },
+"recomendation": "good"
+
+Butão: "Ver Mais"
+
+
+
+https://pixinvent.com/bootstrap-admin-template/robust/
+https://pixinvent.com/bootstrap-admin-template/robust/html/ltr/vertical-compact-menu-template/component-badges.html
+https://c9.io/noxyo
+https://ide.c9.io/noxyo/portfapp-cloned
+https://portfapp-cloned-noxyo.c9users.io/contactos.html
+https://pixinvent.com/bootstrap-admin-template/robust/html/ltr/vertical-compact-menu-template/content-text-utilities.html
+
+
+
+TODO:
+    - modificar os botoes da pagina contactos
+    - finalizar a tabela com os tags correctos
+    - finalizar o card
+    - testar responsividade com flexbox ou com hidden usando media queries

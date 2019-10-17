@@ -1,0 +1,253 @@
+body {
+  
+}
+/*
+#exTab1 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+#exTab2 h3 {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+/* remove border radius for the tab 
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+*/
+
+
+/*****************************/
+
+.privacy a:link{
+    color: white;
+}
+
+#exTab1 .tab-content {
+  color : white;
+ /* background-color: #428bca; */
+  padding : 5px 15px;
+}
+
+#exTab2 h3 {
+  color : white;
+  /*background-color: #428bca; */
+  padding : 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+  color : white;
+ /* background-color: #428bca; */
+  padding : 5px 15px;
+}
+
+
+
+.borda {
+  border: 5px;
+  border-color: #000;
+}
+
+.btn-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.btn-pills {
+    text-align:center;
+}
+
+/* Secondary button color */
+#QBuy {
+  /*
+    background-color: #E91E63!important;
+    padding: 15px 20px 15px 20px; */
+    background-color: #2196F3!important;
+    padding: 15px 20px 15px 20px;
+    margin-top: 25px;
+}
+.qBuy{
+    padding: 5px 10px 5px 10px;
+}
+
+/* Tertiary button color */
+#QSell {
+  /*
+    background-color: #009688!important;
+    padding: 15px 20px 15px 20px;  */
+    background-color: #2196F3!important;
+    padding: 15px 20px 15px 20px;
+    margin-top: 25px;
+}
+.qSell {
+    padding: 5px 10px 5px 10px;
+}
+
+/* Quaternary button color */
+#QCons {
+  /*
+    background-color: #FF4408!important;
+    padding: 15px 20px 15px 20px; */
+    background-color: #2196F3!important;
+    padding: 15px 20px 15px 20px;
+    margin-top: 25px;
+}
+.qCons{
+    padding: 5px 10px 5px 10px;
+}
+.search-Cons{
+    border: none; 
+    box-shadow: none; 
+    /*border-radius: 50px;*/
+    background-color: #FF4408!important;
+    color: #fff!important;
+}
+
+
+/** Placeholder color = white **/
+.search-Cons::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #fff;
+}
+.search-Cons:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+    opacity: 1;
+}
+.search-Cons::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
+    opacity: 1;
+}
+.search-Cons:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+
+
+
+/*
+.search-input ::-webkit-input-placeholder, .search-input :-moz-placeholder, .search-input ::-moz-placeholder, .search-input :-ms-input-placeholder { {
+           color: #fff!important;
+           font-weight: bold;
+        }
+}*/
+
+
+
+/** Nav Menus Fix Background Color **/
+.btn-nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.btn-xl {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  padding: 20px;
+  /*
+  padding: -webkit-calc((((2.5rem - 1.625rem) / 2) - 1px)) 1.11111111111rem;
+  padding: calc((((2.5rem - 1.625rem) / 2) - 1px)) 1.11111111111rem;
+
+  */
+  width: 17rem;
+
+}
+#exTab1 {
+    padding: 40px 10px 40px 10px;
+    background-color: rgba(0,0,0,0.3)!important;
+}
+
+
+.header-title{
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+#cta_1_section {
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.sobre-icons {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.price-img {
+
+    max-width: 50%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.vantagem-img {  
+    max-width: 30%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding: 5px 0 60px 0;
+}
+
+/** Parceiros Style**/
+.underlined-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.partners-img img {
+    /*max-width: 100%;*/
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    opacity: 0.4;
+}
+/*
+.partners-img col-md-2 col-sm-4 col-xs-6{
+  padding-right: 10px;
+  width: auto;
+  border: solid 1px;
+} */
+.section-partners {
+  background-color: #f2f2f2;
+  padding-bottom: 6.5rem;
+  padding-top: 6.5rem;
+}
+.partners-header {
+  padding-bottom: 2.5rem;
+}

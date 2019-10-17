@@ -1,0 +1,295 @@
+<div class="app-content content">
+  <div class="content-wrapper">
+    <div class="content-header row">
+    </div>
+    <div class="content-body">
+      <section class="flexbox-container">
+        <div class="col-12 d-flex align-items-center justify-content-center">
+          <div class="col-md-5 col-10 box-shadow-2 p-0">
+            <div class="card border-grey border-lighten-3 m-0">
+              <div class="card-header border-0 pb-0">
+                <div class="card-title text-center">
+                  <img src="../img/logos/blue_logo_medium.png" class="logo-blue-md" alt="branding logo">
+                </div>
+                <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2">
+                  <span>INFORMAÇÃO COMERCIAL DA EMPRESA</span>
+                </h6>
+              </div>
+              <div class="card-content">
+                <div class="card-body">
+                  <form class="form-horizontal" method="post" action="/users/investidor_privado" novalidate>
+                    <h5 class="form-section"><i class="fa fa-dollar"></i> Despesas</h5>
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12">
+                        <fieldset class="form-group position-relative has-icon-left">
+                          <input type="text" name="compras" id="compras" class="form-control input-lg" placeholder="Compras" tabindex="1">
+                          <div class="form-control-position">
+                            <i class="ft-user"></i>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12">
+                        <fieldset class="form-group position-relative has-icon-left">
+                          <input type="text" name="servicos" id="servicos" class="form-control input-lg" placeholder="Contratação de serviços" tabindex="2">
+                          <div class="form-control-position">
+                            <i class="ft-user"></i>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12">
+                        <fieldset class="form-group position-relative has-icon-left">
+                          <input type="text" name="gastos" id="gastos" class="form-control input-lg" placeholder="Gastos com trabalhadores" tabindex="3">
+                          <div class="form-control-position">
+                            <i class="ft-phone"></i>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12">
+                        <fieldset class="form-group position-relative has-icon-left">
+                          <input type="text" name="outros_gastos" id="outros_gastos" class="form-control input-lg" placeholder="Outros gastos" tabindex="4">
+                          <div class="form-control-position">
+                            <i class="ft-user"></i>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-7 col-sm-12 text-center text-md-left">
+                      </div>
+                      <div class="col-md-5 col-sm-12">
+                        <p class="lead">Total Despesas</p>
+                        <div class="table-responsive">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td></td>
+                                <td class="text-right lead" name="total_ativos" value="0" id="total_despesas">€ 0</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <h5 class="form-section"><i class="fa fa-clipboard"></i> Receitas</h5>
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12">
+                        <fieldset class="form-group position-relative has-icon-left">
+                          <input type="text" name="vendas" id="vendas" class="form-control input-lg" placeholder="Vendas" tabindex="4">
+                          <div class="form-control-position">
+                            <i class="ft-user"></i>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12">
+                        <fieldset class="form-group position-relative has-icon-left">
+                          <input type="text" name="venda_servicos" id="venda_servicos" class="form-control input-lg" placeholder="Prestação de Serviços" tabindex="4">
+                          <div class="form-control-position">
+                            <i class="ft-user"></i>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12">
+                        <fieldset class="form-group position-relative has-icon-left">
+                          <input type="text" name="juros" id="juros" class="form-control input-lg" placeholder="Juros e Royalties" tabindex="4">
+                          <div class="form-control-position">
+                            <i class="ft-user"></i>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12">
+                        <fieldset class="form-group position-relative has-icon-left">
+                          <input type="text" name="outros_rendimentos" id="outros_rendimentos" class="form-control input-lg" placeholder="Outros rendimentos" tabindex="4">
+                          <div class="form-control-position">
+                            <i class="ft-user"></i>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-7 col-sm-12 text-center text-md-left">
+                      </div>
+                      <div class="col-md-5 col-sm-12">
+                        <p class="lead">Total Receitas</p>
+                        <div class="table-responsive">
+                          <table class="table">
+                            <tbody>
+                              <tr>
+                                <td></td>
+                                <td class="text-right lead" value="0" id="total_receitas">€ 0</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-sm-6 col-md-6">
+                        <a href="login" class="btn btn-danger btn-lg btn-block">
+                        <i class="ft-unlock"></i> Sair</a>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-6">
+                        <button type="submit" class="btn btn-info btn-lg btn-block">
+                            <i class="ft-user"></i> Continuar</button>
+                      </div>
+                    </div>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+  </div>
+</div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>‌​
+
+<script>
+  $(document).ready(function() {
+
+    $('#compras').on('change', function() {
+      var total_ativosssss = $('#total_despesas').val()
+      if (total_ativosssss === "") {
+        var total_ativos = $('#total_despesas').val("0");
+      }
+      else {
+        var total_ativos = $('#total_despesas').val();
+      }
+      var compras = $('#compras').val();
+      var compras = parseInt(compras);
+      var total_ativos2 = parseInt(total_ativos) || 0;
+      var total_ativos = total_ativos2 + compras;
+      $('#total_despesas').val(total_ativos)
+      $('#total_despesas').html('€ ' + total_ativos)
+    });
+
+    $('#servicos').on('change', function() {
+      var total_ativosssss = $('#total_despesas').val()
+      if (total_ativosssss === "") {
+        var total_ativos = $('#total_despesas').val("0");
+      }
+      else {
+        var total_ativos = $('#total_despesas').val();
+      }
+      var compras = $('#servicos').val();
+      var compras = parseInt(compras);
+      var total_ativos2 = parseInt(total_ativos) || 0;
+      var total_ativos = total_ativos2 + compras;
+      $('#total_despesas').val(total_ativos)
+      $('#total_despesas').html('€ ' + total_ativos)
+    });
+
+    $('#gastos').on('change', function() {
+      var total_ativosssss = $('#total_despesas').val()
+      if (total_ativosssss === "") {
+        var total_ativos = $('#total_despesas').val("0");
+      }
+      else {
+        var total_ativos = $('#total_despesas').val();
+      }
+      var compras = $('#gastos').val();
+      var compras = parseInt(compras);
+      var total_ativos2 = parseInt(total_ativos) || 0;
+      var total_ativos = total_ativos2 + compras;
+      $('#total_despesas').val(total_ativos)
+      $('#total_despesas').html('€ ' + total_ativos)
+    });
+
+    $('#outros_gastos').on('change', function() {
+      var total_ativosssss = $('#total_despesas').val()
+      if (total_ativosssss === "") {
+        var total_ativos = $('#total_despesas').val("0");
+      }
+      else {
+        var total_ativos = $('#total_despesas').val();
+      }
+      var compras = $('#outros_gastos').val();
+      var compras = parseInt(compras);
+      var total_ativos2 = parseInt(total_ativos) || 0;
+      var total_ativos = total_ativos2 + compras;
+      $('#total_despesas').val(total_ativos)
+      $('#total_despesas').html('€ ' + total_ativos)
+    });
+
+    $('#vendas').on('change', function() {
+      var total_ativosssss = $('#total_receitas').val()
+      if (total_ativosssss === "") {
+        var total_ativos = $('#total_receitas').val("0");
+      }
+      else {
+        var total_ativos = $('#total_receitas').val();
+      }
+      var compras = $('#vendas').val();
+      var compras = parseInt(compras);
+      var total_ativos2 = parseInt(total_ativos) || 0;
+      var total_ativos = total_ativos2 + compras;
+      $('#total_receitas').val(total_ativos)
+      $('#total_receitas').html('€ ' + total_ativos)
+    });
+    
+    $('#venda_servicos').on('change', function() {
+      var total_ativosssss = $('#total_receitas').val()
+      if (total_ativosssss === "") {
+        var total_ativos = $('#total_receitas').val("0");
+      }
+      else {
+        var total_ativos = $('#total_receitas').val();
+      }
+      var compras = $('#venda_servicos').val();
+      var compras = parseInt(compras);
+      var total_ativos2 = parseInt(total_ativos) || 0;
+      var total_ativos = total_ativos2 + compras;
+      $('#total_receitas').val(total_ativos)
+      $('#total_receitas').html('€ ' + total_ativos)
+    });
+    
+    $('#juros').on('change', function() {
+      var total_ativosssss = $('#total_receitas').val()
+      if (total_ativosssss === "") {
+        var total_ativos = $('#total_receitas').val("0");
+      }
+      else {
+        var total_ativos = $('#total_receitas').val();
+      }
+      var compras = $('#juros').val();
+      var compras = parseInt(compras);
+      var total_ativos2 = parseInt(total_ativos) || 0;
+      var total_ativos = total_ativos2 + compras;
+      $('#total_receitas').val(total_ativos)
+      $('#total_receitas').html('€ ' + total_ativos)
+    });
+    
+    $('#outros_rendimentos').on('change', function() {
+      var total_ativosssss = $('#total_receitas').val()
+      if (total_ativosssss === "") {
+        var total_ativos = $('#total_receitas').val("0");
+      }
+      else {
+        var total_ativos = $('#total_receitas').val();
+      }
+      var compras = $('#outros_rendimentos').val();
+      var compras = parseInt(compras);
+      var total_ativos2 = parseInt(total_ativos) || 0;
+      var total_ativos = total_ativos2 + compras;
+      $('#total_receitas').val(total_ativos)
+      $('#total_receitas').html('€ ' + total_ativos)
+    });
+
+
+  });
+</script>

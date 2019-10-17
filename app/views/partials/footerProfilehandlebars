@@ -1,0 +1,12 @@
+<footer class="footer  footer-blue navbar-shadow">
+        <p class="clearfix light text-sm-center mb-0 px-2">
+            <span class="float-md-left d-block d-md-inline-block">Copyright &copy; 2017 
+        <a class="text-bold-800 white" href="https://www.portfollium.pt" target="_blank">Portfollium&amp;Company 
+        </a></span>
+            <span class="float-md-right d-block light d-md-inline-blockd-none d-lg-block">
+            <a target="_blank" href="privacy.html">Privacy 
+            </a>
+            <img class="footer-logo" alt="" src="../img/logos/logo.png">
+        </span>
+        </p>
+    </footer>

@@ -1,0 +1,91 @@
+<div class="app-content content">
+  <div class="content-wrapper">
+    <div class="content-header row">
+    </div>
+    <div class="content-body">
+      <section class="flexbox-container">
+        <div class="col-12 d-flex align-items-center justify-content-center">
+          <div class="col-md-4 col-10 box-shadow-2 p-0">
+            <div class="card border-grey border-lighten-3 m-0">
+              <div class="card-header border-0 pb-0">
+                <div class="card-title text-center">
+                    <img src="../img/logos/blue_logo_medium.png"  class="logo-blue-md" alt="branding logo"> 
+                  </div>
+                <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-2">
+                  <span>Por favor registe-se</span>
+                </h6>
+              </div>
+              <div class="card-content">
+                <div class="card-body col-12 col-sm-12 col-md-12">
+                  <form class="form-horizontal" action="/user/register" method="post" role="form" novalidate>
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12">
+                        <fieldset class="form-group position-relative has-icon-left">
+                          <input type="text" name="username" id="username" class="form-control input-lg" placeholder="Nome de utilizador" tabindex="2">
+                          <div class="form-control-position">
+                            <i class="ft-user"></i>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-12">
+                        <fieldset class="form-group position-relative has-icon-left">
+                          <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email" tabindex="3" required data-validation-required-message="Please enter email address.">
+                          <div class="form-control-position">
+                            <i class="ft-mail"></i>
+                          </div>
+                          <div class="help-block font-small-3"></div>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-12">
+                        <fieldset class="form-group position-relative has-icon-left">
+                          <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" tabindex="6" required>
+                          <div class="form-control-position">
+                            <i class="fa fa-key"></i>
+                          </div>
+                          <div class="help-block font-small-3"></div>
+                        </fieldset>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-12">
+                        <fieldset class="form-group position-relative has-icon-left">
+                          <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirmar Password" tabindex="6" data-validation-matches-match="password" data-validation-matches-message="Password & Confirm Password must be the same.">
+                          <div class="form-control-position">
+                            <i class="fa fa-key"></i>
+                          </div>
+                          <div class="help-block font-small-3"></div>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="row mb-1">
+                      <div class="col-4 col-sm-3 col-md-3">
+                        <fieldset>
+                          <input type="checkbox" id="remember-me" class="chk-remember">
+                          <label for="remember-me"> Eu aceito</label>
+                        </fieldset>
+                      </div>
+                      <div class="col-8 col-sm-9 col-md-9">
+                        <p class="font-small-3">Ao clicar esta a aceitar os
+                          <a href="#" data-toggle="modal" data-target="#t_and_c_m">Termos e Condições de utilização</a> definidos por nós, incluindo o uso de cookies</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-sm-6 col-md-6">
+                        <a href="/user/login" class="btn btn-danger btn-lg btn-block">
+                          <i class="ft-unlock"></i> Login</a>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-6">
+                        <button type="submit" class="btn btn-info btn-lg btn-block">
+                          <i class="ft-user"></i> Registar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

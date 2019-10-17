@@ -1,0 +1,30 @@
+<div class="container">
+  <br>
+  <h2 class="page-header text-center">Sell Product</h2>
+  {{#if errors}} {{#each errors}}
+  <div class="alert alert-danger">{{msg}}</div>
+  {{/each}} {{/if}}
+  <form method="post" action="/products/newProduct">
+    <div class="form-group">
+      <label>Nome</label>
+      <input type="text" class="form-control" placeholder="Name" name="name">
+    </div>
+    <div class="form-group">
+      <label>Preco</label>
+      <input type="text" class="form-control" placeholder="preco" name="preco">
+    </div>
+    <div class="form-group">
+      <label>descricao</label>
+      <input type="text" class="form-control" placeholder="descricao" name="descricao">
+    </div>
+    <div class="form-row">
+      <div class="col">
+        <label>Imagem</label>
+        <input type="text" class="form-control" placeholder="imagem" name="imagem">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-secondary btn-lgt">Submit</button>
+    <a href="/" class="btn btn-secondary btn-lgt" role="button">Cancel</a>
+  </form>
+  <br>
+</div>

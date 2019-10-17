@@ -1,0 +1,794 @@
+<div class="site" id="site">
+  <div class="site-loader" id="site_loader">
+    <div class="site-loader__wrap">
+      <div class="loader loader_circular"></div>
+    </div>
+  </div>
+  <!-- .site-loader-->
+  <div class="site-canvas" id="site_canvas">
+    <div class="site-header site-header-fixed-top" id="site_header">
+        <nav class="navbar site-navbar navbar-lg navbar-primary navbar-bg-from-transparent navbar-fg-from-light" id="site_navbar">
+            <div class="container">
+          <div class="navbar-header"><button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#site_navbar_collapse"><i class="navbar-toggle-icon mdi mdi-menu"></i></button>
+            <div class="site-branding">
+              <h1 class="site-branding-title sr-only"><a class="site-branding-title-link" href="#">Site title</a></h1>
+              <div class="site-branding-media">
+                <a class="site-branding-media-link" href="#"><img class="site-branding-media-img site-branding-media-img-light" src="landing/assets/img/logo.png" alt=""><img class="site-branding-media-img site-branding-media-img-dark" src="landing/assets/images/site-branding-media-img-dark.png"
+                  alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="collapse navbar-collapse" id="site_navbar_collapse">
+              <div class="navbar-right">
+                <ul class="nav navbar-nav menu primary-menu">
+                  <li class="menu-item active"><a href="#intro_2_section" data-smooth-scroll="true">Inicio</a></li>
+                  <li class="menu-item"><a href="#feature_1_section" data-smooth-scroll="true">Sobre</a></li>
+                  <li class="menu-item"><a href="#feature_3_section" data-smooth-scroll="true">Como Usar</a></li>
+                  <li class="menu-item"><a href="#pricing_1_section" data-smooth-scroll="true">Preço</a></li>
+                  
+                  <li class="menu-item"><a href="#sec_partners" data-smooth-scroll="true">Parceiros</a></li>
+
+                  <li class="menu-item"><a href="#contact_1_section" data-smooth-scroll="true">Contacto</a></li>
+                </ul>
+                <a href="/user/login" class="btn btn-secondary navbar-btn" type="button">Entrar</a>
+                <!--
+                <button class="btn btn-secondary navbar-btn" type="button" data-toggle="modal" data-target="#subscribe_form_1_modal">Entrar</button>
+                -->
+                </div>
+              </div>
+              <!-- .navbar-collapse-->
+            </div>
+            <!-- .container-fluid-->
+      </nav>
+          <!-- .navbar-->
+    </div>
+        <!-- .site-header-->
+        <div class="site-content" id="site_content">
+          <div class="intro-2-section section bg-primary" id="intro_2_section">  <!-- INICIO COM IMAGEM DE FUNDO -->
+            <div class="bg">    <!-- alterada a imagenm -->
+              <div class="bg-img bg-img-parallax" data-css-bg-img="landing/assets/img/back.jpg"></div>
+              <!-- .bg-img-->
+              <div class="bg-overlay bg-primary" data-css-opacity="0.9"></div>
+              <!-- .bg-overlay-->
+            </div>
+            <div class="container">
+              <div class="section-header row wow fadeInUpShort">
+                <div class="col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
+                  <div class="section-title">Os melhores negócios em tempo real</div>
+                  <div class="section-subtitle"><p>Aumento de capital, trespasse, cessão de quotas e ações, crédito, cessão de exploração, fusão e consórcio</p></div>
+                </div><br><br><br>
+                <!-- -->
+              </div> <!-- end section-header row -->
+
+
+              <!-- Begin -->
+              <!-- <div class="row"> -->
+              <div class="section-content row">  <!-- Secção com barra de Pesquisa -->
+                <div class="col-sm-12">
+
+                  <div id="exTab1">
+                    <ul class="btn-nav btn-pills">
+                      <li class="active">
+                        <a href="#QBuy" data-toggle="tab" class="btn  btn-primary">Quero Investidor</a>
+                      </li>
+                      <li><a href="#QSell" data-toggle="tab" class="btn  btn-primary">Quero Investir</a>
+                      </li>
+                      <li><a href="#QCons" data-toggle="tab" class="btn  btn-primary">Quero Consultor</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content clearfix">
+                      <div class="tab-pane active" id="QBuy">     <!-- Quero Investidor -->
+                        <form class="form-group"> 
+                          <div class="row qBuy">
+                            <div class="col-lg-2">
+                              <div class="text-center">
+                                <select id="guest" name="guest" class="form-control search-Box">  <!-- 1º Tipo de Negocio  (* Alterar Campos)-->
+                                  <option value="" disabled selected>Tipo de Negócio</option>
+                                  <option value="trespasse">Trespasse</option>
+                                  <option value="quotas">Quotas</option>
+                                  <option value="aumento_cap">Aumento de Capital</option>
+                                  <option value="cessao">Cessão de Exploração</option>
+                                  <option value="fusao">Fusão</option>
+                                  <option value="accoes">Acções</option>
+                                  <option value="consorcio">Consórcio</option>
+                                  <option value="credito">Crédito</option>
+                                </select>
+                              </div>
+                            </div>
+                            
+                            <div class="col-lg-2">
+                              <div class="text-center">
+                                <select id="guest" name="guest" class="form-control search-Box"> <!-- 2º Tipo de Sociedade -->
+                                  <option value="" disabled selected>Tipo de Sociedade</option>
+                                  <option value="emp_indiv">Emp. em Nome Individual</option>
+                                  <option value="eirl">E.I.R.L</option>
+                                  <option value="soc_uni_quotas">Soc. Unipessoal por Quotas</option>
+                                  <option value="soc_colectivo">Soc. em Nome Colectivo</option>
+                                  <option value="soc_por_quotas">Sociedade por Quotas</option>
+                                  <option value="soc_anonima">Sociedade Anónima</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-2">
+                              <div class="text-center">
+                                <select id="guest" name="guest" class="form-control search-Box"> <!-- 3º Sector de Actividade -->
+                                  <option value="" disabled selected>Sector de Actividade</option>
+                                  <option value="bar_cafe">Bares e Cafés</option>
+                                  <option value="clinicas">Clínicas</option>
+                                  <option value="const_civ">Construção Civil</option>
+                                  <option value="fabricas">Fábricas</option>
+                                  <option value="lojas">Lojas</option>
+                                  <option value="pastelarias">Pastelarias</option>
+                                  <option value="restaurantes">Restaurantes</option>
+                                  <option value="supermercados">Supermercados</option>
+                                  <option value="servicos">Serviços</option>
+                                  <option value="outros">Outros Negócios</option>
+                                </select>
+                              </div>
+                            </div>          
+                            <div class="col-lg-2">
+                              <div class="text-center">
+                                <select id="guest" name="guest" class="form-control search-Box"> <!-- 4º Região -->
+                                  <option value="" disabled selected>Região</option>
+                                  <option value="porto_norte">Porto e Norte</option>
+                                  <option value="centro">Centro de Portugal</option>
+                                  <option value="lisboa">Lisboa Região</option>
+                                  <option value="alentejo">Alentejo</option>
+                                  <option value="algarve">Algarve</option>
+                                  <option value="acores">Açores</option>
+                                  <option value="madeira">Madeira</option>
+                                  <option value="pt">Todas as Regiões</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-2">
+                              <div class="text-center">
+                                <select id="guest" name="guest" class="form-control search-Box"> <!-- 5º Valor de Negócio -->
+                                  <option value="" disabled selected>Valor de Negócio</option>
+                                  <option value="1k_20k">€1.000 - 20.000</option>
+                                  <option value="20k_100k">€20.000 - 100.000</option>
+                                  <option value="100k_500k">€100.000 - 500.000</option>
+                                  <option value="500k_1M">€500.000 - 2.000.000</option>
+                                  <option value="2M_10M">€2.000.000 - 10.000.000</option>
+                                  <option value="plus_10M">+ €10.000.000</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-2">
+                              <button type="submit" class="btn btn-primary borda form-control search-Box">Pesquisar <i class="glyphicon glyphicon-search"></i>
+                              </button>
+                            </div>
+
+                          </div>
+                        </form>
+                      </div>
+
+                      <div class="tab-pane" id="QSell">    <!-- Quero Investir --> 
+                        <form class="form-group"> 
+
+                          <div class="row qSell">
+                            <div class="col-lg-2">
+                              <div class="text-center">
+                                <select id="guest" name="guest" class="form-control search-Box">  <!-- 1º Tipo de Negocio  (* Alterar Campos)-->
+                                  <option value="" disabled selected>Tipo de Negócio</option>
+                                  <option value="trespasse">Trespasse</option>
+                                  <option value="quotas">Quotas</option>
+                                  <option value="aumento_cap">Aumento de Capital</option>
+                                  <option value="cessao">Cessão de Exploração</option>
+                                  <option value="fusao">Fusão</option>
+                                  <option value="accoes">Ações</option>                                  
+                                  <option value="consorcio">Consórcio</option>
+                                  <option value="credito">Crédito</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-2">
+                              <div class="text-center">
+                                <select id="guest" name="guest" class="form-control search-Box"> <!-- 2º Tipo de Sociedade -->
+                                  <option value="" disabled selected>Tipo de Sociedade</option>
+                                  <option value="emp_indiv">Emp. em Nome Individual</option>
+                                  <option value="eirl">E.I.R.L</option>
+                                  <option value="soc_uni_quotas">Soc. Unipessoal por Quotas</option>
+                                  <option value="soc_colectivo">Soc. em Nome Colectivo</option>
+                                  <option value="soc_por_quotas">Sociedade por Quotas</option>
+                                  <option value="soc_anonima">Sociedade Anónima</option>
+                                </select>
+                              </div>
+                            </div>          
+                            <div class="col-lg-2">
+                              <div class="text-center">
+                                <select id="guest" name="guest" class="form-control search-Box"> <!-- 3º Sector de Actividade -->
+                                  <option value="" disabled selected>Sector de Actividade</option>
+                                  <option value="bar_cafe">Bares e Cafés</option>
+                                  <option value="clinicas">Clínicas</option>
+                                  <option value="const_civ">Construção Civil</option>
+                                  <option value="fabricas">Fábricas</option>
+                                  <option value="lojas">Lojas</option>
+                                  <option value="pastelarias">Pastelarias</option>
+                                  <option value="restaurantes">Restaurantes</option>
+                                  <option value="supermercados">Supermercados</option>
+                                  <option value="servicos">Serviços</option>
+                                  <option value="outros">Outros Negócios</option>
+                                </select>
+                              </div>
+                            </div>          
+                            <div class="col-lg-2">
+                              <div class="text-center">
+                                <select id="guest" name="guest" class="form-control search-Box"> <!-- 4º Região -->
+                                  <option value="" disabled selected>Região</option>
+                                  <option value="porto_norte">Porto e Norte</option>
+                                  <option value="centro">Centro de Portugal</option>
+                                  <option value="lisboa">Lisboa Região</option>
+                                  <option value="alentejo">Alentejo</option>
+                                  <option value="algarve">Algarve</option>
+                                  <option value="acores">Açores</option>
+                                  <option value="madeira">Madeira</option>
+                                  <option value="pt">Todas as Regiões</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-lg-2">
+                              <div class="text-center">
+                                <select id="guest" name="guest" class="form-control search-Box"> <!-- 5º Valor de Negócio -->
+                                  <option value="" disabled selected>Valor de Negócio</option>
+                                  <option value="1k_20k">€1.000 - 20.000</option>
+                                  <option value="20k_100k">€20.000 - 100.000</option>
+                                  <option value="100k_500k">€100.000 - 500.000</option>
+                                  <option value="500k_1M">€500.000 - 2.000.000</option>
+                                  <option value="2M_10M">€2.000.000 - 10.000.000</option>
+                                  <option value="plus_10M">+ €10.000.000</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="col-lg-2">
+                              <button type="submit" class="btn btn-primary borda form-control search-Box">Pesquisar <i class="glyphicon glyphicon-search"></i>
+                              </button>
+                            </div>
+
+                          </div>
+                        </form>
+                      </div>
+
+                      <div class="tab-pane" id="QCons">    <!-- Quero Consultor -->
+                        <form class="form-group"> 
+                          <div class="row qCons">
+                            <div class="col-lg-3">
+                              <div class="text-center">
+                                <select id="guest" name="guest" class="form-control search-Box">
+                                  <option value="" disabled selected>Especialidade</option>
+                                  <option value="advogado">Advogado</option>
+                                  <option value="consultor">Consultor</option>
+                                  <option value="auditor">Auditor</option>
+                                  <option value="contabilista">Contabilista</option>
+                                </select>
+                              </div>
+                            </div>          
+                            <div class="col-lg-3">
+                              <div class="text-center">
+                                <select id="guest" name="guest" class="form-control search-Box">
+                                  <option value="" disabled selected>Região</option>
+                                  <option value="porto_norte">Porto e Norte</option>
+                                  <option value="centro">Centro de Portugal</option>
+                                  <option value="lisboa">Lisboa Região</option>
+                                  <option value="alentejo">Alentejo</option>
+                                  <option value="algarve">Algarve
+                                    <option value="acores">Açores</option>
+                                    <option value="madeira">Madeira</option>
+                                    <option value="pt">Todas as Regiões</option>
+                                  </select>
+                                </div>
+                              </div>          
+                              <div class="col-lg-3">
+                                <div class="text-center">
+                                  <input type="text" class="form-control search-Box" placeholder="Nome...">
+                                </div>
+                              </div>          
+                              <div class="col-lg-3">
+                                <div class="text-center">
+                                  <button type="submit" class="btn btn-primary borda form-control search-Box">Pesquisar <i class="glyphicon glyphicon-search"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- FIM -->
+                </div>   <!-- End Secção com barra de Pesquisa -->
+                <div class="section-content row">
+                  <div class="col-sm-10 col-sm-offset-1">
+
+                    <div class="section-media wow fadeInUpShort" data-wow-delay="300ms"><img class="section-media-img" src="landing/assets/img/mainpic.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>   <!-- FIM do INICIO COM IMAGEM DE FUNDO -->
+            <div class="feature-1-section section" id="feature_1_section">
+              <div class="container">
+                <div class="section-content row">
+                  <div class="section-text col-md-6 col-md-offset-1">
+                    <div class="section-heading wow fadeInDownShort">
+                      <div class="section-title text-center">O que fazer com a <span>Portfollium</span></div>
+                      <div class="section-subtitle">A aplicação Portfollium permite as PME e investidores encontrarem oportunidades de negócio de forma filtrada e rápida. Contabilistas, consultores, advogados e auditores auxiliam as empresas e investidores nessas transações.</div>
+                    </div>
+                    <div class="section-body">
+                      <div class="feature-info">
+                        <div class="feature-info-item wow fadeInRightShort" data-wow-delay="150ms">
+                          <div class="media sobre-icons">
+                            <div class="media-left"><button class="btn btn-fab btn-primary" type="button"><i class="icon mdi mdi-responsive"></i></button></div>
+                            <div class="media-body">
+                              <!--<h3 class="media-heading">Fully Responsive</h3> -->
+                              <p>Pode usar a Portfollium no seu smartphone, tablet e computador
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="feature-info-item wow fadeInRightShort" data-wow-delay="300ms">
+                          <div class="media sobre-icons">
+                            <div class="media-left"><button class="btn btn-fab btn-secondary" type="button"><i class="icon mdi mdi-wechat"></i></button></div>
+                            <div class="media-body">
+                              <!--<h3 class="media-heading">Chat Application</h3>-->
+                              <p>Fale com potenciais interessados em tempo real por videoconferência, chat e mensagem interna.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="feature-info-item wow fadeInRightShort" data-wow-delay="450ms">
+                          <div class="media sobre-icons">
+                            <div class="media-left"><button class="btn btn-fab btn-tertiary" type="button"><i class="icon mdi mdi-contact-mail"></i></button></div>
+                            <div class="media-body">
+                              <!--<h3 class="media-heading">Emails Application</h3>-->
+                              <p>Aceda relatórios, indicadores e gráficos de todas as oportunidades de negócio.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- added aqui -->
+                      <div class="feature-info-item wow fadeInRightShort" data-wow-delay="600ms">
+                        <div class="media sobre-icons">
+                          <div class="media-left"><button class="btn btn-fab btn-quaternary" type="button"><i class="icon mdi mdi-human-greeting"></i></button></div>
+                          <div class="media-body">
+                            <!--<h3 class="media-heading">People & Messages</h3>-->
+                            <p>Minimize o risco pedindo ajuda em tempo real a consultores presentes na aplicação</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- fim -->
+                    </div>
+                  </div>
+                  <div class="section-media col-sm-10 col-sm-offset-1 col-md-5 col-md-offset-0"><img class="section-media-img" src="landing/assets/img/portfollium_videochat.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-3-section section" id="feature_3_section">
+              <div class="container header-title">
+                <!-- Titulo -->
+                <div class="section-header row wow fadeInDownShort">
+                  <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <div class="section-title">Como usar a <span>aplicação</span></div>
+                  </div>
+                </div>
+                <!-- -->
+              </div>
+
+
+
+              <div class="container-fluid">
+
+                <div class="section-content row">
+
+                  <div class="iconbox col-md-4 color-auto">
+                    <div class="iconbox-item">
+                      <div class="iconbox-item-media wow flipInX"><button class="btn btn-fab btn-secondary" type="button"><i class="icon mdi mdi-responsive"></i></button></div>
+                      <div class="iconbox-item-title">Se é uma PME</div>
+                      <div class="iconbox-item-body">
+                        <p>1º Faça registo na aplicação web</p>
+                        <p>2º Preencha alguns dados do seu negócio</p>
+                        <p>3º Comece a fazer negócios </p></div>
+                      </div>
+                    </div>
+                    <div class="iconbox col-md-4 color-auto">
+                      <div class="iconbox-item">
+                        <div class="iconbox-item-media wow flipInX" data-wow-delay="150ms"><button class="btn btn-fab btn-primary" type="button"><i class="icon mdi mdi-palette-advanced"></i></button></div>
+                        <div class="iconbox-item-title">Se é um investidor</div>
+                        <div class="iconbox-item-body">
+                          <p>1º Faça registo na aplicação web</p>
+                          <p>2º Comece a fazer negócios</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="iconbox col-md-4 color-auto">
+                      <div class="iconbox-item">
+                        <div class="iconbox-item-media wow flipInX" data-wow-delay="300ms"><button class="btn btn-fab btn-quaternary" type="button"><i class="icon mdi mdi-tune"></i></button></div>
+                        <div class="iconbox-item-title">Se é contabilista, consultor, advogado ou auditor</div>
+                        <div class="iconbox-item-body">
+                          <p>1º Faça registo na aplicação web</p>
+                          <p>2º Crie um perfil</p>
+                          <p>3º Comece a prestar os seus serviços a empresas e investidores</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--
+              <div class="feature-3-section section" id="feature_3_section">
+                <div class="container-fluid">
+                  <div class="section-content row">
+
+                    <div class="section-heading wow fadeInDownShort">
+                      <div class="section-title">Check out all our <span>great features</span></div>
+                      <div class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua exercitation.</div>
+                    </div>
+
+
+
+
+                    <div class="iconbox col-md-4 color-auto">
+                      <div class="iconbox-item">
+                        <div class="iconbox-item-media wow flipInX"><button class="btn btn-fab btn-secondary" type="button"><i class="icon mdi mdi-responsive"></i></button></div>
+                        <div class="iconbox-item-title">Fully Responsive</div>
+                        <div class="iconbox-item-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</div>
+                      </div>
+                    </div>
+                    <div class="iconbox col-md-4 color-auto">
+                      <div class="iconbox-item">
+                        <div class="iconbox-item-media wow flipInX" data-wow-delay="150ms"><button class="btn btn-fab btn-primary" type="button"><i class="icon mdi mdi-palette-advanced"></i></button></div>
+                        <div class="iconbox-item-title">Multiple Colors</div>
+                        <div class="iconbox-item-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</div>
+                      </div>
+                    </div>
+                    <div class="iconbox col-md-4 color-auto">
+                      <div class="iconbox-item">
+                        <div class="iconbox-item-media wow flipInX" data-wow-delay="300ms"><button class="btn btn-fab btn-quaternary" type="button"><i class="icon mdi mdi-tune"></i></button></div>
+                        <div class="iconbox-item-title">Easy to customize</div>
+                        <div class="iconbox-item-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            -->
+
+
+            <div class="screenshot-1-section section bg-canvas-default" id="screenshot_1_section">
+              <div class="container-fluid">
+                <div class="section-content row">
+                  <div class="section-text col-md-6">
+                    <div class="section-heading wow fadeInDownShort">
+                      <div class="section-title">Onde pode usar a <span>aplicação</span></div>
+                      <div class="section-subtitle">Pode usar a aplicação Portfollium no seu smartphone, tablet e computador 24horas/dia.</div>
+                    </div>
+                    <div class="section-body wow fadeInLeftShort" data-wow-delay="150ms">
+                      <p> É compatível com Firefox, Chrome, Safari e Internet Explorer em Windows, macOS X, Android e iOS.</p>
+                    </div>
+                    <img class="vantagem-img" src="landing/assets/img/compatible.png" alt="">
+                    <div class="section-body wow fadeInLeftShort" data-wow-delay="150ms" style="visibility: visible; animation-delay: 150ms; animation-name: fadeInLeftShort;">
+                      <p> Receba gratuitamente a nossa newsletter.</p>
+                    </div>
+
+
+
+
+                    <div class="section-cta wow fadeInUpShort" data-wow-delay="300ms"><a class="btn btn-lg btn-wide btn-primary" href="#">Quero Receber</a></div>
+                  </div>
+                  <div class="section-media col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
+                    <div class="bfc-carousel" data-slick="{&quot;mobileFirst&quot;: true, &quot;slidesToShow&quot;: 2, &quot;slidesToScroll&quot;: 1, &quot;arrows&quot;: false, &quot;responsive&quot;: [{&quot;breakpoint&quot;: 991, &quot;settings&quot;: {&quot;slidesToShow&quot;: 2}}, {&quot;breakpoint&quot;: 1199, &quot;settings&quot;: {&quot;slidesToShow&quot;: 3}}, {&quot;breakpoint&quot;: 1365, &quot;settings&quot;: {&quot;slidesToShow&quot;: 4}}]}">
+                      <div class="screenshot-media"><img class="img-responsive" src="landing/assets/images/screenshot-1.jpg" alt=""></div>
+                      <div class="screenshot-media"><img class="img-responsive" src="landing/assets/images/screenshot-2.jpg" alt=""></div>
+                      <div class="screenshot-media"><img class="img-responsive" src="landing/assets/images/screenshot-3.jpg" alt=""></div>
+                      <div class="screenshot-media"><img class="img-responsive" src="landing/assets/images/screenshot-4.jpg" alt=""></div>
+                      <div class="screenshot-media"><img class="img-responsive" src="landing/assets/images/screenshot-5.jpg" alt=""></div>
+                      <div class="screenshot-media"><img class="img-responsive" src="landing/assets/images/screenshot-6.jpg" alt=""></div>
+                    </div>
+                    <div class="bfc-carousel-button text-center">
+                      <div class="btn-group"><button class="btn-carousel-prev btn btn-sm btn-fab btn-primary" type="button"><i class="icon mdi mdi-chevron-left"></i></button><button class="btn-carousel-next btn btn-sm btn-fab btn-primary" type="button"><i class="icon mdi mdi-chevron-right"></i></button></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pricing-1-section section" id="pricing_1_section">
+              <div class="container">
+                <!-- Titulo Secção-->
+                <div class="section-header row wow fadeInDownShort">
+                  <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <div class="section-title">Os nossos <span>preços</span></div>
+                    <div class="section-subtitle">Subscreva um plano e encontre os melhores negócios em tempo real.</div>
+                  </div>
+                </div>
+                <!-- Tabela de Preços -->
+                <div class="section-content row">
+                  <div class="pricing-table pricing-table-1 col-sm-6 col-md-4 wow fadeInUpShort pricing-table-primary">
+                    <div class="pricing-table-wrap">
+                      <div class="panel md-panel">
+                        <div class="panel-heading">
+                          <div class="panel-title">Free</div>
+                        </div>
+                        <div class="panel-body">
+                          <p class="pricing-table-price">€0</p><a class="btn btn-secondary" href="#">Começar</a>
+                        </div>
+
+                        <ul class="list-group list-group-striped">
+                          <li class="list-group-item">Comunicação em tempo real</li>
+                          <li class="list-group-item">Relatórios e indicadores</li>
+                          <li class="list-group-item">Notificação instantânea</li>
+                          <li class="list-group-item">Acesso a todos os negócios</li>
+                          <li class="list-group-item">Recomendações estratégicas</li>
+                          <li class="list-group-item">Suporte técnico</li>
+                          <li class="list-group-item">Acesso 1 mês</li>
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pricing-table pricing-table-1 col-sm-6 col-md-4 wow fadeInUpShort pricing-table-secondary" data-wow-delay="150ms">
+                    <div class="pricing-table-wrap">
+                      <div class="panel md-panel">
+                        <div class="panel-heading">
+                          <div class="panel-title">Standard</div>
+                        </div>
+                        <div class="panel-body">
+                          <p class="pricing-table-price">€150</p><a class="btn btn-primary" href="#">Começar</a></div>
+                          <ul class="list-group list-group-striped">
+                            <li class="list-group-item">Comunicação em tempo real</li>
+                            <li class="list-group-item">Relatórios e indicadores</li>
+                            <li class="list-group-item">Notificação instantânea</li>
+                            <li class="list-group-item">Acesso a todos os negócios</li>
+                            <li class="list-group-item">Recomendações estratégicas</li>
+                            <li class="list-group-item">Suporte técnico</li>
+                            <li class="list-group-item">Acesso 2 meses</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pricing-table pricing-table-1 col-sm-6 col-md-4 wow fadeInUpShort pricing-table-tertiary" data-wow-delay="300ms">
+                      <div class="pricing-table-wrap">
+                        <div class="panel md-panel">
+                          <div class="panel-heading">
+                            <div class="panel-title">Premium</div>
+                          </div>
+                          <div class="panel-body">
+                            <p class="pricing-table-price">€300</p><a class="btn btn-quaternary" href="#">Começar</a>
+                          </div>
+                          <ul class="list-group list-group-striped">
+                            <li class="list-group-item">Comunicação em tempo real</li>
+                            <li class="list-group-item">Relatórios e indicadores</li>
+                            <li class="list-group-item">Notificação instantânea</li>
+                            <li class="list-group-item">Acesso a todos os negócios</li>
+                            <li class="list-group-item">Recomendações estratégicas</li>
+                            <li class="list-group-item">Suporte técnico</li>
+                            <li class="list-group-item">Acesso 4 meses</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Imagem rodapé -->
+                  <div class="section-content row">
+                    <div class="col-xs-12">
+                      <img class="price-img" src="landing/assets/img/payment.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Section Pre-Register -->
+              <div class="cta-1-section section section-sm bg-primary" id="cta_1_section">
+                <div class="container wow fadeInDownShort">
+                  <div class="section-header row">
+                    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                      <div class="section-title">Faça já o seu registo.</div>
+                      <div class="section-subtitle">Experimente a Portfollium durante 30 dias sem compromisso.</div>
+                    </div>
+                  </div>
+                  <div class="section-content row">
+                    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                      <div class="section-cta">
+                        <button class="btn btn-secondary navbar-btn" type="button" data-toggle="modal" data-target="#subscribe_form_1_modal">Começar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      <!-- Section Download 
+
+      <div class="download-1-section section" id="download_1_section">
+        <div class="container">
+          <div class="section-header row wow fadeInUpShort">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <div class="section-title">Start your <span>free trial</span></div>
+              <div class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua exercitation.</div>
+            </div>
+          </div>
+          <div class="section-content row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <div class="section-cta wow fadeInUpShort" data-wow-delay="150ms">
+                <a class="btn-download" href="#"><img src="landing/assets/images/badge-google-play.png" alt=""></a>
+                <a class="btn-download" href="#"><img src="landing/assets/images/badge-app-store.png" alt=""></a>
+              </div>
+              <div class="section-media wow fadeInUpShort" data-wow-delay="300ms"><img class="section-media-img" src="landing/assets/images/download-1-section-media-img.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      End Section Download -->
+      <!-- Section Parceiros -->
+      <section class="section-partners section" id="sec_partners">
+        <div class="container wow fadeInDownShort">
+          <div class="section-header partners-header row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <div class="section-title text-center">Os nossos <span>parceiros</span></div>
+
+            </div>              
+          </div>
+          <div class="section-content row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <div class="partners-img">
+
+                <div class="row">
+                  <div class="col-md-2 col-sm-4 col-xs-6">
+                    <img alt="Client Logo" class="img-responsive" src="files/logo-bootstrap.png">
+                  </div>
+
+                  <div class="col-md-2 col-sm-4 col-xs-6">
+                    <img alt="Client Logo" class="img-responsive" src="files/logo-less.png">
+                  </div>
+
+                  <div class="col-md-2 col-sm-4 col-xs-6">
+                    <img alt="Client Logo" class="img-responsive" src="files/logo-sass.png">
+                  </div>
+
+                  <div class="col-md-2 col-sm-4 col-xs-6">
+                    <img alt="Client Logo" class="img-responsive" src="files/logo-yeoman.png">
+                  </div>
+
+                  <div class="col-md-2 col-sm-4 col-xs-6">
+                    <img alt="Client Logo" class="img-responsive" src="files/logo-bower.png">
+                  </div>
+
+                  <div class="col-md-2 col-sm-4 col-xs-6">
+                    <img alt="Client Logo" class="img-responsive" src="files/logo-jquery.png">
+                  </div>
+                </div><!--end of row-->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Section Parceiros -->
+
+
+
+      <div class="contact-1-section section bg-canvas-default" id="contact_1_section">
+        <div class="container">
+          <div class="section-header row wow fadeInDownShort">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+              <div class="section-title">O nosso <span>contacto</span></div>
+              <!--<div class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua exercitation.</div> -->
+            </div>
+          </div>
+          <div class="section-content row">
+            <div class="section-contact-form col-sm-7 col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-1 wow fadeInLeftShort" data-wow-delay="150ms">
+              <form class="contact-form form" id="contact_form_1" novalidate data-form-action="landing/assets/php/contact.php">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group"><label for="contact_form_fname">Nome</label><input class="form-control" id="contact_form_fname" type="text" name="fname" placeholder="Nome" data-rule-required="true" data-msg-required="This field is required."><span class="help-block form-notify"></span></div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group"><label for="contact_form_lname">Apelido</label><input class="form-control" id="contact_form_lname" type="text" name="lname" placeholder="Apelido" data-rule-required="true" data-msg-required="This field is required."><span class="help-block form-notify"></span></div>
+                  </div>
+                </div>
+                <div class="form-group"><label for="contact_form_email">Mail</label><input class="form-control" id="contact_form_email" type="email" name="email" placeholder="Mail" data-rule-required="true" data-msg-required="This field is required." data-rule-email="true"
+                  data-msg-email="Please enter a valid email address."><span class="help-block form-notify"></span></div>
+                  <div class="form-group"><label for="contact_form_message">Messagem</label><textarea class="form-control" id="contact_form_message" rows="4" name="message" placeholder="Messagem" data-rule-required="true" data-msg-required="This field is required."></textarea>
+                    <span
+                    class="help-block form-notify"></span>
+                  </div>
+                  <div class="form-group"><input class="btn btn-block btn-primary" type="submit" value="Enviar" form="contact_form_1"><span class="help-block submit-notify"></span></div>
+                </form>
+              </div>
+              <div class="section-contact-info col-sm-5 col-md-4 col-lg-4 col-lg-offset-1 wow fadeInRightShort" data-wow-delay="300ms">
+                <div class="contact-info">
+                  <div class="contact-info-item">
+                    <div class="media">
+                      <div class="media-left"><button class="btn btn-fab btn-primary" type="button"><i class="icon mdi mdi-map-marker-radius"></i></button></div>
+                      <div class="media-body">
+                        <h3 class="media-heading">Endereço</h3><address>Braga, Portugal</address></div>
+                      </div>
+                    </div>
+                    <!--
+                    <div class="contact-info-item">
+                      <div class="media">
+                        <div class="media-left"><button class="btn btn-fab btn-secondary" type="button"><i class="icon mdi mdi-deskphone"></i></button>
+                        </div>
+                        <div class="media-body">
+                          <h3 class="media-heading">Phone number</h3><address><b>Tel:</b> +0 123-456-7890<br><b>Fax:</b> +0 123-456-7890</address>
+                        </div>
+                      </div>
+                    </div>  -->
+                    <div class="contact-info-item">
+                      <div class="media">
+                        <div class="media-left"><button class="btn btn-fab btn-tertiary" type="button"><i class="icon mdi mdi-email"></i></button></div>
+                        <div class="media-body">
+                          <h3 class="media-heading">Mail</h3><address><b>Suporte:</b> help@portfollium.pt</address></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .site-content-->
+          <div class="site-footer" id="site_footer">
+            <div class="site-footer-info-1 section section-sm bg-primary" id="site_footer_info_1"><a class="btn btn-fab btn-secondary wow bounceIn" id="btn_scroll_to_top" href="#"><i class="icon mdi mdi-chevron-up"></i></a>
+              <div class="container">
+                <div class="section-content row">
+                  <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <div class="site-footer-branding wow fadeInDownShort">
+                      <div class="site-footer-branding-media">
+                        <a class="site-footer-branding-media-link" href="#"><img class="site-footer-branding-media-img" src="landing/assets/img/logo.png" alt=""></a>
+                      </div>
+                    </div>
+                    <div class="site-footer-social">
+                      <ul class="list-inline text-center">
+                        <li class="site-footer-social-item wow rollIn" data-wow-delay="150ms"><a target="_blank" href="https://www.facebook.com/Portfollium-460196817479003"><i class="icon icon-fs mdi mdi-facebook-box"></i></a></li>
+                        <li class="site-footer-social-item wow rollIn" data-wow-delay="200ms"><a target="_blank" href="https://twitter.com/Portfollium"><i class="icon icon-fs mdi mdi-twitter-box"></i></a></li>
+                        <li class="site-footer-social-item wow rollIn" data-wow-delay="250ms"><a target="_blank" href="https://www.instagram.com/portfollium.pt"><i class="icon icon-fs mdi mdi-instagram"></i></a></li>
+                        <li class="site-footer-social-item wow rollIn" data-wow-delay="300ms"><a target="_blank" href="https://pt.linkedin.com/in/portfollium"><i class="icon icon-fs mdi mdi-linkedin-box"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="site-footer-copyright wow fadeInUp" data-wow-delay="350ms">
+                      <div>Copyright &copy; 2017 Portfollium&Company. All Rights Reserved.
+                        <p class="privacy">
+                          <a target="_blank" href="privacy.html"><small>Privacy</small></a>
+                          <a target="_blank" href="privacy.html"><small>| Terms & Conditions</small></a>
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .site-footer-->
+        </div>
+        <!-- .site-canvas-->
+      </div>
+      <!-- .site-->
+      <div class="modal modal-primary fade" id="subscribe_form_1_modal" tabindex="-1">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header"><button class="close" type="button" data-dismiss="modal"><span>&times;</span></button>
+              <h4 class="modal-title">Faça já o pré-registo</h4>
+            </div>
+            <div class="modal-body">
+              <!--  Modal with Logo -->
+              <!-- <img class="subscribe-form-media-img" src="landing/assets/img/logo.png" alt=""> -->
+              <!-- -->
+
+              <h3>A partir deste verão encontre os melhores negócios, em Portugal, de forma instantânea e faça networking em tempo real.</h3><br>
+              <p>Experimente a Portfollium durante 30 dias sem compromisso.</p>
+              <!-- -->
+              <form class="subscribe-form form" id="subscribe_form_1" novalidate data-form-action="landing/assets/php/mailchimp.php">
+                <div class="form-group"><label class="sr-only" for="subscribe_form_1_email">Email</label><input class="form-control" id="subscribe_form_1_email" type="email" name="email" placeholder="Email" data-rule-required="true" data-msg-required="This field is required."
+                  data-rule-email="true" data-msg-email="Please enter a valid email address."><span class="help-block form-notify"></span>
+                </div>
+                <div class="form-group"><input class="btn btn-block btn-secondary" type="submit" value="Subscrever" form="subscribe_form_1"><span class="help-block submit-notify"></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>

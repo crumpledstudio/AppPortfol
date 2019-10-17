@@ -1,0 +1,57 @@
+<div class="container">
+  <br>
+  <h2 class="page-header text-center">Registar</h2>
+  {{#if errors}} {{#each errors}}
+  <div class="alert alert-danger">{{msg}}</div>
+  {{/each}} {{/if}}
+  <form method="post" action="/users/register">
+    <div class="form-group">
+      <label>Nome</label>
+      <input type="text" class="form-control" placeholder="Nome" name="name">
+    </div>
+    <div class="form-row">
+      <div class="col">
+        <label>Email</label>
+        <input type="email" class="form-control" placeholder="Email" name="email">
+      </div>
+      <div class="col">
+        <label>Telemovel</label>
+        <input type="text" class="form-control" placeholder="Telemovel" name="phone">
+      </div>
+
+      <div class="col">
+        <label>Pais</label>
+        <select class="form-control" name="country">
+          <option value="null" selected="selected">Selecione uma opção</option>
+          <option value="Portugal" selected="selected">Portugal</option>
+          <option value="Afeganistão">Afeganistão</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Nome de utilizador</label>
+      <input type="text" class="form-control" placeholder="Nome de utilizador" name="username">
+    </div>
+    <div class="form-row">
+      <div class="col">
+        <label>Password</label>
+        <input type="password" class="form-control" placeholder="Password" name="password">
+      </div>
+      <div class="col">
+        <label>Confirm Password</label>
+        <input type="password" class="form-control" placeholder="Password" name="password2">
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-secondary btn-lgt">Submit</button>
+    <a href="/" class="btn btn-secondary btn-lgt" role="button">Cancel</a>
+  </form>
+  <br>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>‌​
+
+
+
+</script>

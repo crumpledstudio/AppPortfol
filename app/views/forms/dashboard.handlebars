@@ -1,0 +1,198 @@
+<div class="container">
+  <br>
+  <h2 class="page-header text-center">Informações de conta</h2>
+  {{#if errors}} {{#each errors}}
+  <div class="alert alert-danger">{{msg}}</div>
+  {{/each}} {{/if}}
+
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-4">
+        <div class="col-lg-12 col-sm-6 text-center mb-4">
+          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+          <h3>{{user.username}}
+            <small>{{user.name}}</small>
+          </h3>
+          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-8">
+        <!-- Categories Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">
+            {{#if isCliente}}
+            <form action="/users/changeinfo/">
+              Feedback
+              <a href="/" class="btn btn-secondary btn-lgt" role="button">Cancel</a>
+            </form> {{else}} Teste{{/if}}
+          </h5>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-8">
+                <table class="table text-center">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">1 months</th>
+                      <th scope="col">6 months</th>
+                      <th scope="col">All time</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <i class="far fa-smile"></i>
+                      </th>
+                      <td>3</td>
+                      <td>8</td>
+                      <td>17</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <i class="far fa-meh"></i>
+                      </th>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <i class="far fa-frown"></i>
+                      </th>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-lg-4">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <i class="far fa-smile"></i> Quick response and fast payment. Perfect! THANKS!!
+                  </li>
+                  <li>
+                    <br>
+                  </li>
+                  <li>
+                    <i class="far fa-smile"></i> Great buyer many thanks
+                  </li>
+                  <li>
+                    <br>
+                  </li>
+                  <li>
+                    <i class="far fa-smile"></i> THANK YOU! A pleasure to do business with. **WELCOME BACK ANYTIME**
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-12 text-right">
+                <a href="/">See all feedback</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Widget -->
+        {{!--
+        <div class="card my-4">
+          <h5 class="card-header">Side Widget</h5>
+          <div class="card-body">
+            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+          </div>
+        </div> --}}
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+
+  <div class="container">
+    <br>
+    <h4 class="page-header text-center">Items for sale</h4>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#">
+                <img class="card-img-top" src="http://placehold.it/700x400" alt="">
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item One</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#">
+                <img class="card-img-top" src="http://placehold.it/700x400" alt="">
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item Two</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit
+                  amet.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#">
+                <img class="card-img-top" src="http://placehold.it/700x400" alt="">
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item Three</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#">
+                <img class="card-img-top" src="http://placehold.it/700x400" alt="">
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Item Four</a>
+                </h4>
+                <h5>$24.99</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.col-lg-9 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+
+</div>
+<br>
