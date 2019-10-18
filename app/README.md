@@ -22,3 +22,4 @@
 1) Launch the app from the Terminal:
 
     $ node server2.js
+    $ node server.js  <--- versão actual

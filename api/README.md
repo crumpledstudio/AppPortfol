@@ -18,6 +18,6 @@ __________              __    _____      .__  .__  .__
 ## Running the server
 
 
-1) Launch the app from the Terminal:
+1) Launch the api from the Terminal:
 
     $ node server.js

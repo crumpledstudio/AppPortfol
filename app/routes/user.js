@@ -110,6 +110,7 @@ router.get('/negociacoes', function(req, res, next) {
 });
 
 router.get('/dashboard', function(req, res, next) {
+	/*
 	var id_gerado = req.cookies['id_gerado'];
 	if (id_gerado != undefined) {
 		res.render('user/dashboard', { layout: 'dashboard_layout', tittle: 'Negociacoes Page' });
@@ -117,6 +118,8 @@ router.get('/dashboard', function(req, res, next) {
 	else {
 		res.redirect('../user/login');
 	}
+	*/
+	res.render('user/dashboard', { layout: 'dashboard_layout', tittle: 'Negociacoes Page' });
 });
 
 router.get('/changeinfo', function(req, res, next) {
@@ -159,6 +162,7 @@ router.get('/contabilidade_teste', function(req, res, next) {
 });
 
 router.get('/portfolio', function(req, res, next) {
+	/*
 	var id_gerado = req.cookies['id_gerado'];
 	if (id_gerado != undefined) {
 		res.render('user/portfolio', { layout: 'portfolio', tittle: 'Porfolio Page' });
@@ -166,9 +170,12 @@ router.get('/portfolio', function(req, res, next) {
 	else {
 		res.redirect('../user/login');
 	}
+	*/
+	res.render('user/portfolio', { layout: 'portfolio', tittle: 'Porfolio Page' });
 });
 
 router.get('/recomendacoes', function(req, res, next) {
+	/*
 	var id_gerado = req.cookies['id_gerado'];
 	if (id_gerado != undefined) {
 		res.render('user/recomendacoes', { layout: 'noGraphs', tittle: 'Recomendacoes Page' });
@@ -176,6 +183,8 @@ router.get('/recomendacoes', function(req, res, next) {
 	else {
 		res.redirect('../user/login');
 	}
+	*/
+	res.render('user/recomendacoes', { layout: 'noGraphs', tittle: 'Recomendacoes Page' });
 });
 
 router.get('/chat', function(req, res, next) {

@@ -2407,6 +2407,23 @@ router.get('/offers' /* , passport.authenticate('jwt', { session: false }) */ , 
   }
 });
 
+/****************************************
+ * Aceder á lista de ofertas 
+ *  versão sem controle de id_gerado
+ *  versão alterada 16-10-2019 * 
+ */
+router.get('/offers', function(req, res) {
+  console.log("pedir lista de ofertas");
+  Offer.find({}, function(err, offers) {
+    if (err) throw err;
+    else {
+      res.json({ success: true, offers: offers });
+    }
+  });
+});
+
+
+
 /*---------------------------------------------------------------------
 ROUTE PARA ACEDER AS INFORMACOES RESTRITAS DE UMA OFERTA (GET http://localhost:8080/api/memberinfo)
 *-------------------------------------------------------------------*/

@@ -52,7 +52,7 @@ router.get('/', function(req, res, next) {
     if (id_gerado != undefined) {
         request.get({
             headers: { 'authorization': id_gerado },
-        	url: 'https://portapi-afonsoocosta53.c9users.io/offer/searchOffer?offerClassName=' + offerClassName + '&tipoSociedade=' + tipoSociedade +
+        	url: 'https://localhost:8080/offer/searchOffer?offerClassName=' + offerClassName + '&tipoSociedade=' + tipoSociedade +
 				'&setorAtividade=' + setorAtividade + '&offerValue=' + offerValue + '&offerRegion=' + offerRegion,
             }, function(error, response, body) {
             var body2 = JSON.parse(body);
