@@ -1121,7 +1121,7 @@ router.post('/newOffer' /* , passport.authenticate('jwt', { session: false }) */
                               outras_contas_receber: req.body.outras_contas_receber,
                               caixa: req.body.caixa,
                               depositos_bancarios: req.body.depositos_bancarios,
-                              total_ativos: req.body.inventario + req.body.caixa + req.body.depositos_bancarios + req.body.adiantamento_fornecedoresreq.body.outras_contas_receber,
+                              total_ativos: req.body.inventario + req.body.caixa + req.body.depositos_bancarios + req.body.adiantamento_fornecedores + req.body.outras_contas_receber,
                               capital_realizado: req.body.capital_realizado,
                               reservas_legais: req.body.reservas_legais,
                               outras_reservas: req.body.outras_reservas,
@@ -2408,9 +2408,9 @@ router.get('/offers' /* , passport.authenticate('jwt', { session: false }) */ , 
 });
 
 /****************************************
- * Aceder á lista de ofertas 
+ * Aceder á lista de ofertas
  *  versão sem controle de id_gerado
- *  versão alterada 16-10-2019 * 
+ *  versão alterada 16-10-2019 *
  */
 router.get('/offers', function(req, res) {
   console.log("pedir lista de ofertas");
@@ -2440,11 +2440,12 @@ router.get('/offer' /* , passport.authenticate('jwt', { session: false }) */ , f
       }
       else {
         Offer.find({
-          offer_number: "oferta"
+          offer_number: req.headers.id_oferta
         }, function(err, offer) {
+          console.log(offer);
           if (err) throw err;
 
-          if (!user) {
+          if (!offer) {
             return res.status(403).send({ success: false, msg: 'Authentication failed. User not found.' });
           }
           else {
@@ -2868,6 +2869,10 @@ router.post('/editOffer' /* , passport.authenticate('jwt', { session: false }) *
 
 /*---------------------------------------------------------------------
 ROUTE PARA ACEDER APAGAR UMA OFERTA (GET http://localhost:8080/api/memberinfo)
+
+
+----ALTERAR----- NAO ACABADO
+
 *-------------------------------------------------------------------*/
 router.get('/offerDelete' /* , passport.authenticate('jwt', { session: false }) */ , function(req, res) {
   var token = getToken(req.headers);
@@ -2891,7 +2896,7 @@ router.get('/offerDelete' /* , passport.authenticate('jwt', { session: false }) 
 });
 
 /*---------------------------------------------------------------------
-ROUTE PARA ACEDER AS INFORMACOES DE TODOS OS PRODUTOS 
+ROUTE PARA ACEDER AS INFORMACOES DE TODOS OS PRODUTOS
 *-------------------------------------------------------------------*/
 router.get('/searchOffer', function(req, res) {
   var id_gerado = req.headers.authorization;

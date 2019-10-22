@@ -2,13 +2,13 @@ var express = require('express');
 var router = express.Router();
 var request = require("request");
 
-/**
+
 router.get('/', function(req, res, next) {
     var id_gerado = req.cookies['id_gerado'];
     if (id_gerado != undefined) {
         request.get({
             headers: { 'authorization': id_gerado },
-            url: 'https://portapi-afonsoocosta53.c9users.io/offer/offers',
+            url: 'http://localhost:8080/offer/offers',
         }, function(error, response, body) {
             var body2 = JSON.parse(body);
             var products = body2.offers;
@@ -41,7 +41,7 @@ router.get('/', function(req, res, next) {
         res.redirect('../user/login');
     }
 });
-*/
+/**
 router.get('/', function(req, res, next) {
     var id_gerado = req.cookies['id_gerado'];
     var offerClassName = req.query.offerClassName
@@ -86,6 +86,7 @@ router.get('/', function(req, res, next) {
         res.redirect('../user/login');
     }
 });
+*/
 
 router.get('/teste', function(req, res, next) {
     console.log("TESTE")
@@ -93,7 +94,7 @@ router.get('/teste', function(req, res, next) {
     if (id_gerado != undefined) {
         request.get({
             headers: { 'authorization': id_gerado },
-            url: 'https://portapi-afonsoocosta53.c9users.io/offer/offers',
+            url: 'http://localhost:8080/offer/offers',
         }, function(error, response, body) {
             var body2 = JSON.parse(body);
             var products = body2.offers;
@@ -216,7 +217,7 @@ router.post('/nifvalidation', function(req, res) {
         var bodyText = 'accountType=Investidor Privado' + '&&nif=' + nif;
         request.post({
             headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-            url: 'https://portapi-afonsoocosta53.c9users.io/user/nifvalidation',
+            url: 'http://localhost:8080/user/nifvalidation',
             body: bodyText
         }, function(error, response, body) {
             var body2 = JSON.parse(body);
@@ -235,7 +236,7 @@ router.post('/nifvalidation', function(req, res) {
             var bodyText = 'accountType=Investidor Coletivo' + '&&nif=' + nif + '&&distrito=' + cidade;
             request.post({
                 headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-                url: 'https://portapi-afonsoocosta53.c9users.io/user/nifvalidation',
+                url: 'http://localhost:8080/user/nifvalidation',
                 body: bodyText
             }, function(error, response, body) {
                 var body2 = JSON.parse(body);
@@ -251,7 +252,7 @@ router.post('/nifvalidation', function(req, res) {
                 var bodyText = 'accountType=Empresa' + '&&nif=' + nif + '&&distrito=' + cidade;
                 request.post({
                     headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-                    url: 'https://portapi-afonsoocosta53.c9users.io/user/nifvalidation',
+                    url: 'http://localhost:8080/user/nifvalidation',
                     body: bodyText
                 }, function(error, response, body) {
                     var body2 = JSON.parse(body);
@@ -266,7 +267,7 @@ router.post('/nifvalidation', function(req, res) {
                     var bodyText = 'accountType=businessIdeia' + '&&nif=' + nif;
                     request.post({
                         headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-                        url: 'https://portapi-afonsoocosta53.c9users.io/user/nifvalidation',
+                        url: 'http://localhost:8080/user/nifvalidation',
                         body: bodyText
                     }, function(error, response, body) {
                         var body2 = JSON.parse(body);
@@ -290,7 +291,7 @@ router.post('/nifvalidation_coletivo', function(req, res) {
     var bodyText = 'accountType=Investidor Coletivo' + '&&nif=' + nif + '&&distrito=' + cidade;
     request.post({
         headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-        url: 'https://portapi-afonsoocosta53.c9users.io/user/nifvalidation',
+        url: 'http://localhost:8080/user/nifvalidation',
         body: bodyText
     }, function(error, response, body) {
         var body2 = JSON.parse(body);
@@ -306,7 +307,7 @@ router.post('/nifvalidation_empresa', function(req, res) {
     var bodyText = 'accountType=Empresa' + '&&nif=' + nif + '&&distrito=' + cidade;
     request.post({
         headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-        url: 'https://portapi-afonsoocosta53.c9users.io/user/nifvalidation',
+        url: 'http://localhost:8080/user/nifvalidation',
         body: bodyText
     }, function(error, response, body) {
         var body2 = JSON.parse(body);
@@ -681,7 +682,7 @@ router.post('/oferta_coletivo', function(req, res) {
     console.log(bodyText);
     request.post({
         headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-        url: 'https://portapi-afonsoocosta53.c9users.io/offer/newOffer',
+        url: 'http://localhost:8080/offer/newOffer',
         body: bodyText
     }, function(error, response, body) {
         var body2 = JSON.parse(body);
@@ -1307,7 +1308,7 @@ router.post('/oferta_empresa', function(req, res) {
     console.log(bodyText);
     request.post({
         headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-        url: 'https://portapi-afonsoocosta53.c9users.io/offer/newOffer',
+        url: 'http://localhost:8080/offer/newOffer',
         body: bodyText
     }, function(error, response, body) {
         var body2 = JSON.parse(body);
@@ -1492,7 +1493,7 @@ router.post('/oferta_privado', function(req, res) {
     console.log(bodyText);
     request.post({
         headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-        url: 'https://portapi-afonsoocosta53.c9users.io/offer/newOffer',
+        url: 'http://localhost:8080/offer/newOffer',
         body: bodyText
     }, function(error, response, body) {
         var body2 = JSON.parse(body);
@@ -1506,7 +1507,7 @@ router.post('/oferta_ideia', function(req, res) {
     var bodyText = 'accountType=Investidor Coletivo';
     request.post({
         headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-        url: 'https://portapi-afonsoocosta53.c9users.io/user/nifvalidation',
+        url: 'http://localhost:8080/user/nifvalidation',
         body: bodyText
     }, function(error, response, body) {
         var body2 = JSON.parse(body);
@@ -1547,7 +1548,7 @@ router.post('/newOffer', function(req, res) {
             console.log(bodyText);
             request.post({
                 headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-                url: 'https://portapi-afonsoocosta53.c9users.io/offer/newOffer',
+                url: 'http://localhost:8080/offer/newOffer',
                 body: bodyText
             }, function(error, response, body) {
                 console.log(body);
@@ -1579,7 +1580,7 @@ router.post('/newOffer', function(req, res) {
             console.log(bodyText);
             request.post({
                 headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-                url: 'https://portapi-afonsoocosta53.c9users.io/offer/newOffer',
+                url: 'http://localhost:8080/offer/newOffer',
                 body: bodyText
             }, function(error, response, body) {
                 console.log(body);
@@ -1611,7 +1612,7 @@ router.post('/newOffer', function(req, res) {
             console.log(bodyText);
             request.post({
                 headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-                url: 'https://portapi-afonsoocosta53.c9users.io/offer/newOffer',
+                url: 'http://localhost:8080/offer/newOffer',
                 body: bodyText
             }, function(error, response, body) {
                 console.log(body);
@@ -1642,7 +1643,7 @@ router.post('/newOffer', function(req, res) {
             console.log(bodyText);
             request.post({
                 headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-                url: 'https://portapi-afonsoocosta53.c9users.io/offer/newOffer',
+                url: 'http://localhost:8080/offer/newOffer',
                 body: bodyText
             }, function(error, response, body) {
                 console.log(body);
@@ -1675,7 +1676,7 @@ router.post('/newOffer', function(req, res) {
             console.log(bodyText);
             request.post({
                 headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-                url: 'https://portapi-afonsoocosta53.c9users.io/offer/newOffer',
+                url: 'http://localhost:8080/offer/newOffer',
                 body: bodyText
             }, function(error, response, body) {
                 console.log(body);
@@ -1705,7 +1706,7 @@ router.post('/newOffer', function(req, res) {
             console.log(bodyText);
             request.post({
                 headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-                url: 'https://portapi-afonsoocosta53.c9users.io/offer/newOffer',
+                url: 'http://localhost:8080/offer/newOffer',
                 body: bodyText
             }, function(error, response, body) {
                 console.log(body);
@@ -1737,7 +1738,7 @@ router.post('/newOffer', function(req, res) {
             console.log(bodyText);
             request.post({
                 headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-                url: 'https://portapi-afonsoocosta53.c9users.io/offer/newOffer',
+                url: 'http://localhost:8080/offer/newOffer',
                 body: bodyText
             }, function(error, response, body) {
                 console.log(body);
@@ -1766,7 +1767,7 @@ router.post('/newOffer', function(req, res) {
             console.log(bodyText);
             request.post({
                 headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-                url: 'https://portapi-afonsoocosta53.c9users.io/offer/newOffer',
+                url: 'http://localhost:8080/offer/newOffer',
                 body: bodyText
             }, function(error, response, body) {
                 console.log(body);
@@ -1798,7 +1799,7 @@ router.post('/newOffer', function(req, res) {
             console.log(bodyText);
             request.post({
                 headers: { 'content-type': 'application/x-www-form-urlencoded', 'authorization': id_gerado },
-                url: 'https://portapi-afonsoocosta53.c9users.io/offer/newOffer',
+                url: 'http://localhost:8080/offer/newOffer',
                 body: bodyText
             }, function(error, response, body) {
                 console.log(body);
